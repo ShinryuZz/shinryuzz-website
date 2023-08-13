@@ -9,7 +9,8 @@ html {
 }
 
 :root {
-  background-color: #44475a; /* dracula dark default */
+  /* background-color: #44475a; */
+  background-color: #3b425a;
   color: #f8f8f2; /* dracula light 50 */
 }
 
