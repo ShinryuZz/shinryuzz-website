@@ -1,19 +1,49 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const handleMenuToggle = () => setIsOpen(!isOpen);
+  const handleMenuClose = () => setIsOpen(false);
+
   return (
-    <header className="relative bg-darker w-full flex justify-around items-center p-5 shadow-xl">
-      <Link href="/">
-        <h1 className="text-xl">🦘 shinryuzz</h1>
-      </Link>
-      <nav className="flex items-center gap-8">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/photos">Photos</Link>
+    <header className="bg-darker p-5 shadow-xl">
+      <nav className="w-full flex sm:justify-around justify-between items-center ">
+        <Link href="/">
+          <h1 className="text-xl">🦘 shinryuzz</h1>
+        </Link>
+        <div className="items-center sm:hidden">
+          <button onClick={handleMenuToggle}>
+            <FontAwesomeIcon icon={faBars} size="lg" />
+          </button>
+        </div>
+        <div
+          className={
+            isOpen
+              ? "fixed top-16 right-0 bottom-0 left-0 flex flex-col gap-2 bg-darker justify-start items-center"
+              : "hidden sm:flex items-center gap-8"
+          }
+        >
+          <Link href="/" onClick={handleMenuClose}>
+            Home
+          </Link>
+          <Link href="/about" onClick={handleMenuClose}>
+            About
+          </Link>
+          <Link href="/blog" onClick={handleMenuClose}>
+            Blog
+          </Link>
+          <Link href="/photos" onClick={handleMenuClose}>
+            Photos
+          </Link>
+        </div>
+
+        {/* TODO: light/dark モード切り替え */}
       </nav>
-      {/* TODO: light/dark モード切り替え */}
     </header>
   );
 };
