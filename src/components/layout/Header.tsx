@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="bg-darker p-5 shadow-xl">
       <nav className="w-full flex sm:justify-around justify-between items-center ">
-        <Link href="/">
+        <Link href="/" className="hover:text-cyan-800 ">
           <h1 className="text-xl">🦘 shinryuzz</h1>
         </Link>
         <div className="items-center sm:hidden">
@@ -28,16 +28,32 @@ const Header = () => {
               : "hidden sm:flex items-center gap-8"
           }
         >
-          <Link href="/" onClick={handleMenuClose}>
+          <Link
+            href="/"
+            onClick={handleMenuClose}
+            className="hover:text-cyan-800 hover:border-b border-cyan-800"
+          >
             Home
           </Link>
-          <Link href="/about" onClick={handleMenuClose}>
+          <Link
+            href="/about"
+            onClick={handleMenuClose}
+            className="hover:text-cyan-800 hover:border-b border-cyan-800"
+          >
             About
           </Link>
-          <Link href="/blog" onClick={handleMenuClose}>
+          <Link
+            href="/blog"
+            onClick={handleMenuClose}
+            className="hover:text-cyan-800 hover:border-b border-cyan-800"
+          >
             Blog
           </Link>
-          <Link href="/photos" onClick={handleMenuClose}>
+          <Link
+            href="/photos"
+            onClick={handleMenuClose}
+            className="hover:text-cyan-800 hover:border-b border-cyan-800"
+          >
             Photos
           </Link>
         </div>

@@ -9,7 +9,7 @@ const Footer = () => {
         <a
           href={personalTwitterURL}
           target="_blank"
-          className="hover:underline"
+          className="hover:underline hover:text-cyan-800"
         >
           shinryuzz
         </a>
