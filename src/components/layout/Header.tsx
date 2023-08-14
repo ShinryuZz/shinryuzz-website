@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="dark:bg-darker p-5 shadow-xl z-10">
+    <header className="p-6 z-10">
       <nav className="w-full flex sm:justify-around justify-between items-center ">
         <Link href="/" className="hover:text-cyan-800 flex items-center gap-3">
           <h1 className="text-xl">shinryuzz</h1>
