@@ -11,7 +11,7 @@ const Header = () => {
   const handleMenuClose = () => setIsOpen(false);
 
   return (
-    <header className="bg-darker p-5 shadow-xl">
+    <header className="bg-darker p-5 shadow-xl z-10">
       <nav className="w-full flex sm:justify-around justify-between items-center ">
         <Link href="/" className="hover:text-cyan-800 ">
           <h1 className="text-xl">🦘 shinryuzz</h1>

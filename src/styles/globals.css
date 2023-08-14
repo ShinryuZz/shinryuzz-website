@@ -15,3 +15,54 @@ html {
 
 @media (prefers-color-scheme: dark) {
 }
+
+.stars {
+  border-radius: 100%;
+  box-shadow: 24vw 9vh 2px 1px #f80e95, 12vw -24vh 0px 1px #f80e95,
+    -45vw -22vh 1px 0px #ffb86c, -37vw -40vh 0px 1px #fff,
+    29vw 19vh 0px 1px #fff, 4vw -8vh 0px 1px #fff, -5vw 21vh 2px 1px #50fa7b,
+    -27vw 26vh 2px 1px #f80e95, -47vw -3vh 2px 1px #fff,
+    -28vw -30vh 0px 1px #fff, -43vw -27vh 0px 1px #fff, 4vw 22vh 2px 1px #fff,
+    36vw 23vh 1px 0px #fff, -21vw 24vh 2px 1px #fff, -16vw 2vh 2px 1px #fff,
+    -16vw -6vh 1px 0px #fff, 5vw 26vh 1px 0px #f80e95, -34vw 41vh 1px 0px #fff,
+    1vw 42vh 2px 1px #ffb86c, 11vw -13vh 2px 1px #fff, 48vw -8vh 2px 1px #fff,
+    22vw -15vh 1px 0px #f1fa8c, 45vw 49vh 1px 0px #ffb86c,
+    43vw -27vh 2px 1px #50fa7b, 20vw -2vh 1px 0px #50fa7b,
+    8vw 22vh 0px 1px #ffb86c, 39vw 48vh 2px 1px #f1fa8c,
+    -21vw -11vh 1px 1px #fff, -40vw 45vh 0px 1px #fff, 11vw -30vh 2px 1px #fff,
+    26vw 30vh 2px 1px #ffb86c, 45vw -29vh 0px 1px #50fa7b,
+    -2vw 18vh 1px 0px #fff, -29vw -45vh 2px 1px #f1fa8c, -7vw -27vh 2px 1px #fff,
+    42vw 24vh 1px 0px #fff, 45vw -48vh 2px 1px #f1fa8c, -36vw -18vh 1px 0px #fff,
+    -44vw 13vh 0px 1px #fff, 36vw 16vh 0px 1px #fff, 40vw 24vh 1px 0px #f1fa8c,
+    18vw 11vh 1px 0px #fff, -15vw -23vh 2px 1px #ffb86c, -24vw 48vh 0px 1px #fff,
+    27vw -45vh 2px 1px #50fa7b, -2vw -24vh 0px 1px #fff,
+    -15vw -28vh 1px 0px #fff, -43vw 13vh 2px 1px #fff, 7vw 27vh 2px 1px #f80e95,
+    47vw 5vh 1px 0px #fff, -45vw 15vh 2px 1px #fff, -5vw -28vh 0px 1px #fff,
+    38vw 25vh 2px 1px #fff, -39vw -1vh 2px 1px #f80e95, 5vw 0vh 2px 1px #fff,
+    49vw 13vh 1px 0px #fff, 48vw 10vh 0px 1px #fff, 19vw -28vh 1px 0px #fff,
+    4vw 7vh 1px 0px #f80e95, 21vw 21vh 2px 1px #ffb86c,
+    -15vw -15vh 0px 1px #ffb86c, -6vw -42vh 2px 1px #fff,
+    -15vw 48vh 2px 1px #fff, -23vw 25vh 2px 1px #fff, -48vw 25vh 0px 1px #ffb86c,
+    -31vw -19vh 0px 1px #fff, 4vw 37vh 2px 1px #f1fa8c,
+    -43vw 28vh 1px 0px #f80e95, 3vw -25vh 0px 1px #fff, -39vw 14vh 0px 1px #fff,
+    -40vw 31vh 0px 1px #fff, 35vw -36vh 2px 1px #fff, 16vw 49vh 1px 0px #ffb86c,
+    6vw 39vh 1px 0px #fff, 3vw -35vh 0px 1px #f80e95, -44vw -2vh 2px 1px #fff,
+    -6vw 21vh 2px 1px #50fa7b, 48vw 9vh 2px 1px #fff, -43vw 30vh 2px 1px #f80e95,
+    29vw -12vh 2px 1px #f80e95, -48vw 13vh 2px 1px #fff, -42vw 32vh 2px 1px #fff,
+    34vw 15vh 2px 1px #f1fa8c, 29vw -37vh 2px 1px #fff, 28vw 2vh 1px 0px #fff;
+  animation: 16s ease-in infinite alternate forwards running twinkle;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
