@@ -3,12 +3,15 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
+import { useDarkMode } from "@/lib/useDarkMode";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleMenuToggle = () => setIsOpen(!isOpen);
   const handleMenuClose = () => setIsOpen(false);
+
+  const { isDarkMode, toggle } = useDarkMode();
 
   const pages: string[] = ["home", "about", "blog", "photos"];
 
@@ -17,11 +20,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-darker p-5 shadow-xl z-10">
+    <header className="dark:bg-darker p-5 shadow-xl z-10">
       <nav className="w-full flex sm:justify-around justify-between items-center ">
         <Link href="/" className="hover:text-cyan-800 flex items-center gap-3">
           <h1 className="text-xl">shinryuzz</h1>
         </Link>
+
         <div className="items-center sm:hidden">
           <button onClick={handleMenuToggle}>
             <FontAwesomeIcon icon={faBars} size="lg" />
@@ -55,9 +59,12 @@ const Header = () => {
               </Link>
             )
           )}
+          <FontAwesomeIcon
+            icon={faCircleHalfStroke}
+            className="p-1 hover:bg-darker-700 hover:cursor-pointer"
+            onClick={() => toggle(isDarkMode)}
+          />
         </div>
-
-        {/* TODO: light/dark モード切り替え */}
       </nav>
     </header>
   );
