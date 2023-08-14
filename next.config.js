@@ -1,3 +1,5 @@
+const remarkPrism = require("remark-prism");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,7 +10,7 @@ const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     rehypePlugins: [],
-    remarkPlugins: [],
+    remarkPlugins: [remarkPrism],
     providerImportSource: "@mdx-js/react",
   },
 });
