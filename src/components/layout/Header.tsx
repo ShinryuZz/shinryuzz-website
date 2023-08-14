@@ -10,11 +10,17 @@ const Header = () => {
   const handleMenuToggle = () => setIsOpen(!isOpen);
   const handleMenuClose = () => setIsOpen(false);
 
+  const pages: string[] = ["home", "about", "blog", "photos"];
+
+  const capitalize = (str: string) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+
   return (
     <header className="bg-darker p-5 shadow-xl z-10">
       <nav className="w-full flex sm:justify-around justify-between items-center ">
-        <Link href="/" className="hover:text-cyan-800 ">
-          <h1 className="text-xl">🦘 shinryuzz</h1>
+        <Link href="/" className="hover:text-cyan-800 flex items-center gap-3">
+          <h1 className="text-xl">shinryuzz</h1>
         </Link>
         <div className="items-center sm:hidden">
           <button onClick={handleMenuToggle}>
@@ -28,34 +34,27 @@ const Header = () => {
               : "hidden sm:flex items-center gap-8"
           }
         >
-          <Link
-            href="/"
-            onClick={handleMenuClose}
-            className="hover:text-cyan-800 hover:border-b border-cyan-800"
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            onClick={handleMenuClose}
-            className="hover:text-cyan-800 hover:border-b border-cyan-800"
-          >
-            About
-          </Link>
-          <Link
-            href="/blog"
-            onClick={handleMenuClose}
-            className="hover:text-cyan-800 hover:border-b border-cyan-800"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/photos"
-            onClick={handleMenuClose}
-            className="hover:text-cyan-800 hover:border-b border-cyan-800"
-          >
-            Photos
-          </Link>
+          {pages.map((page) =>
+            page == "home" ? (
+              <Link
+                key={page}
+                href="/"
+                onClick={handleMenuClose}
+                className="hover:text-cyan-800 hover:border-b border-cyan-800"
+              >
+                Home
+              </Link>
+            ) : (
+              <Link
+                key={page}
+                href={`/${page}`}
+                onClick={handleMenuClose}
+                className="hover:text-cyan-800 hover:border-b border-cyan-800"
+              >
+                {capitalize(page)}
+              </Link>
+            )
+          )}
         </div>
 
         {/* TODO: light/dark モード切り替え */}
