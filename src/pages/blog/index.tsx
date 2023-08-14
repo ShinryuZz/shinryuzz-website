@@ -1,7 +1,8 @@
+import Wip from "@/components/Wip";
 import React from "react";
 
 const BlogPage = () => {
-  return <div>BlogPage</div>;
+  return <Wip />;
 };
 
 export default BlogPage;

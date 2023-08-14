@@ -1,7 +1,8 @@
 import React from "react";
+import Wip from "@/components/Wip";
 
 const PhotosPage = () => {
-  return <div>PhotosPage</div>;
+  return <Wip />;
 };
 
 export default PhotosPage;
