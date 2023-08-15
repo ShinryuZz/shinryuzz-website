@@ -28,6 +28,7 @@ function MDXFormatter({ children, ...props }: MDXFormatterProps) {
         <Head>
           <title>{props.meta.title}</title>
           <meta name="description" content={props.meta.title} />
+          {/* TODO: Headタグを用いてOGPに対応する */}
         </Head>
 
         <div className="flex flex-col items-center justify-center text-center gap-4">
