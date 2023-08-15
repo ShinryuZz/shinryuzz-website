@@ -34,7 +34,7 @@ const Header = () => {
         <div
           className={
             isOpen
-              ? "fixed top-16 right-0 bottom-0 left-0 flex flex-col gap-2 bg-darker justify-start items-center"
+              ? "fixed top-16 right-0 bottom-0 left-0 flex flex-col gap-2 bg-light dark:bg-darker justify-start items-center"
               : "hidden sm:flex items-center gap-8"
           }
         >

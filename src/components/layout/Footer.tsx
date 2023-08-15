@@ -1,27 +1,50 @@
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faGithub,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  personalGithub,
+  personalTwitter,
+  personalFacebook,
+  personalInstagram,
+} from "@/const/links";
 
 const Footer = () => {
-  const personalTwitterURL: string = "https://twitter.com/shinryuslpr1127";
-  const personalGithubURL: string = "https://github.com/shinryuzz";
   return (
     <footer className="w-full p-5 flex flex-col justify-center items-center gap-3">
-      <div className="flex gap-8 items-center">
+      <div className="flex gap-8 items-center justify-center">
         <a
-          href={personalTwitterURL}
+          href={personalTwitter}
           target="_blank"
           className="text-[#1DA1F2] hover:opacity-70"
         >
           <FontAwesomeIcon icon={faTwitter} size="lg" />
         </a>
         <a
-          href={personalGithubURL}
+          href={personalGithub}
           target="_blank"
           className="text-[#24292E] dark:text-[#FAFBFC] hover:opacity-70"
         >
           <FontAwesomeIcon icon={faGithub} size="lg" />
+        </a>
+        <a
+          href={personalInstagram}
+          target="_blank"
+          className="text-[#E1306C] hover:opacity-70"
+        >
+          <FontAwesomeIcon icon={faInstagram} size="lg" />
+        </a>
+        <a
+          href={personalFacebook}
+          target="_blank"
+          className="text-[#3b5998] hover:opacity-70"
+        >
+          <FontAwesomeIcon icon={faFacebook} size="lg" />
         </a>
       </div>
 

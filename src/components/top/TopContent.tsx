@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { personalTwitter } from "@/const/links";
 
 const TopContent = () => {
   return (
@@ -21,7 +22,7 @@ const TopContent = () => {
           <br />
           ソフトウェアエンジニアとしてキャリアを築いていきたいと思っている。
         </div>
-        <a href="https://twitter.com/shinryuslpr1127" target="_blank">
+        <a href={personalTwitter} target="_blank">
           <Image
             className="rounded-full hover:scale-105 duration-150 hover:shadow-lg hover:shadow-red"
             src="/kangaroo-space.png"
