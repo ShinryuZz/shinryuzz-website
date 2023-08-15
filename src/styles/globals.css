@@ -48,7 +48,7 @@ html {
     -6vw 21vh 2px 1px #50fa7b, 48vw 9vh 2px 1px #fff, -43vw 30vh 2px 1px #f80e95,
     29vw -12vh 2px 1px #f80e95, -48vw 13vh 2px 1px #fff, -42vw 32vh 2px 1px #fff,
     34vw 15vh 2px 1px #f1fa8c, 29vw -37vh 2px 1px #fff, 28vw 2vh 1px 0px #fff;
-  animation: 16s ease-in infinite alternate forwards running twinkle;
+  animation: 10s ease-in infinite alternate forwards running twinkle;
 }
 
 @keyframes twinkle {
