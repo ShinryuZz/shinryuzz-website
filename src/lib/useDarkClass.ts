@@ -6,8 +6,6 @@ type UseDarkClass = (isDark?: boolean) => {
 };
 
 export const useDarkClass: UseDarkClass = (isDark = false) => {
-  console.log("useDarkClass");
-
   const [isDarkMode, setIsDarkMode] = useState<boolean>(isDark);
   const toggle = (isDark?: boolean) => {
     if (typeof isDark === "undefined") {

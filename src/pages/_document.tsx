@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link
           rel="stylesheet"
-          href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
+          // href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css" // ローカルファイルを読み込ませているためc/o
         ></link>
       </Head>
       <body>

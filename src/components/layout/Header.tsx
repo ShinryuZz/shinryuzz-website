@@ -61,7 +61,7 @@ const Header = () => {
           )}
           <FontAwesomeIcon
             icon={faCircleHalfStroke}
-            className="p-1 hover:bg-darker-700 hover:cursor-pointer"
+            className="p-1 hover:bg-light-200 dark:hover:bg-darker-700 hover:cursor-pointer"
             onClick={() => toggle(isDarkMode)}
           />
         </div>
