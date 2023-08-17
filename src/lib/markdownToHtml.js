@@ -3,7 +3,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
-const markdownToHtml = async (markdownContent: string) => {
+const markdownToHtml = async (markdownContent) => {
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
