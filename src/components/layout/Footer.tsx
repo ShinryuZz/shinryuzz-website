@@ -6,6 +6,7 @@ import {
   faGithub,
   faFacebook,
   faInstagram,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   personalGithub,
@@ -21,9 +22,10 @@ const Footer = () => {
         <a
           href={personalTwitter}
           target="_blank"
-          className="text-[#1DA1F2] hover:opacity-70"
+          // className="text-[#1DA1F2] hover:opacity-70"
+          className="text-black dark:text-white hover:opacity-70 "
         >
-          <FontAwesomeIcon icon={faTwitter} size="lg" />
+          <FontAwesomeIcon icon={faXTwitter} size="lg" />
         </a>
         <a
           href={personalGithub}
