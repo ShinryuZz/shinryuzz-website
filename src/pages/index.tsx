@@ -1,24 +1,26 @@
 import TopContent from "@/components/top/TopContent";
 import PostsFeed from "@/components/top/PostsFeed";
-import { Meta } from "@/@types/types";
-import { getAllPosts } from "@/lib/post";
+import { getAllPosts } from "@/lib/blog";
+import { Post } from "@/@types/types";
 
 type Props = {
-  metas: Meta[];
+  posts: Post[];
 };
 
-export default function Home({ metas }: Props) {
-  console.log(metas);
+export default function Home({ posts }: Props) {
+  console.log("posts", posts);
   return (
     <div className="flex flex-col items-center gap-5 w-full">
       <TopContent />
-      <PostsFeed metas={metas} />
+      <PostsFeed posts={posts} />
       <div className="stars"></div>
     </div>
   );
 }
 
-export const getStaticProps = async () => {
-  const metas = await getAllPosts();
-  return { props: { metas: metas } };
-};
+export async function getStaticProps() {
+  const posts = getAllPosts(["title", "date", "slug"]);
+  return {
+    props: { posts },
+  };
+}

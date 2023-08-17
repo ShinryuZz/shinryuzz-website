@@ -4,11 +4,10 @@ import { getPostBySlug, getAllPosts } from "../../lib/blog";
 import markdownToHtml from "../../lib/markdownToHtml";
 import Head from "next/head";
 import MDFormatter from "../../components/blog/MDFormatter";
+import { Post } from "@/@types/types";
 
 type Props = {
-  post: any;
-  morePosts: any;
-  preview: any;
+  post: Post;
 };
 
 export default function Post({ post }: Props) {
