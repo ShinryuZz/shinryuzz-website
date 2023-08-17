@@ -25,7 +25,7 @@ export default function Post({ post }: Props) {
       <article className="mb-32">
         <Head>
           <title>{post.title}</title>
-          <meta property="og:image" content={post.ogImage.url} />
+          <meta property="og:image" content={post.ogImage?.url} />
         </Head>
 
         <MDFormatter content={post.content} />
