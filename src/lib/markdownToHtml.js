@@ -1,15 +1,8 @@
-import rehypeStringify from "rehype-stringify";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import { unified } from "unified";
+import remark from "remark";
+import html from "remark-html";
+import prism from "remark-prism";
 
-const markdownToHtml = async (markdownContent) => {
-  const result = await unified()
-    .use(remarkParse)
-    .use(remarkRehype)
-    .use(rehypeStringify)
-    .process(markdownContent);
+export default async function markdownToHtml(markdown) {
+  const result = await remark().use(html).use(prism).process(markdown);
   return result.toString();
-};
-
-export default markdownToHtml;
+}
