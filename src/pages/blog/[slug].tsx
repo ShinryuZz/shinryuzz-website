@@ -27,7 +27,6 @@ export default function Post({ post }: Props) {
           <title>{post.title}</title>
           <meta property="og:image" content={post.ogImage?.url} />
         </Head>
-
         <MDFormatter content={post.content} />
       </article>
     </>
@@ -35,14 +34,13 @@ export default function Post({ post }: Props) {
 }
 
 export const getStaticProps = async ({ params }: { params: any }) => {
-  const post = getPostBySlug(params.slug, [
+  const post = await getPostBySlug(params.slug, [
     "title",
     "date",
     "slug",
     "author",
     "content",
     "ogImage",
-    "coverImage",
   ]);
   const content = await markdownToHtml(post.content || "");
 
@@ -57,7 +55,7 @@ export const getStaticProps = async ({ params }: { params: any }) => {
 };
 
 export const getStaticPaths = async () => {
-  const posts = getAllPosts(["slug"]);
+  const posts = await getAllPosts(["slug"]);
 
   return {
     paths: posts.map((post) => {
