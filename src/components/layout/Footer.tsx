@@ -55,7 +55,7 @@ const Footer = () => {
           &copy; 2023 shinryuzz. All Rights Reserved.
         </span>
 
-        <span>|</span>
+        {/* <span className="hidden sm:block">|</span>
 
         <span className="flex items-center gap-1">
           Powered by{" "}
@@ -72,7 +72,7 @@ const Footer = () => {
               height={24}
             />
           </a>
-        </span>
+        </span> */}
       </div>
     </footer>
   );
