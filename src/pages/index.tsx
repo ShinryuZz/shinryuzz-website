@@ -10,7 +10,7 @@ type Props = {
 export default function Home({ posts }: Props) {
   console.log("posts", posts);
   return (
-    <div className="flex flex-col items-center gap-5 w-full">
+    <div className="flex flex-col justify-start items-center gap-5">
       <TopContent />
       <PostsFeed posts={posts} />
       <div className="stars"></div>
@@ -19,7 +19,7 @@ export default function Home({ posts }: Props) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts(["title", "date", "slug"]);
+  const posts = await getAllPosts(["title", "date", "slug", "tags"]);
   return {
     props: { posts },
   };

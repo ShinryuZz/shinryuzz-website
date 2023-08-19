@@ -1,25 +1,27 @@
 ---
-title: 'Getting started with this template'
-excerpt: 'Everything you need to know to get a Next.js blog up and running.'
-coverImage: '/assets/blog/getting-started/snowy-mountain.jpg'
-date: '2021-08-24T05:35:07.322Z'
+title: "Getting started with this template"
+excerpt: "Everything you need to know to get a Next.js blog up and running."
+coverImage: "/assets/blog/getting-started/snowy-mountain.jpg"
+date: "2021/09/01"
 author:
   name: sandypockets
-  picture: '/assets/blog/authors/sandypockets_avatar.jpg'
+  picture: "/assets/blog/authors/sandypockets_avatar.jpg"
 ogImage:
-  url: '/assets/blog/getting-started/cover.jpg'
+  url: "/assets/blog/getting-started/cover.jpg"
+tags: [FirstPost, ポエム]
 ---
 
 # Getting started
+
 These steps will guide you through creating your own local copy of the project. You'll learn how to quickly get it up and running, so you can get back to creating your content.
 
 This app was built and tested with Node `14`. It uses React `17.0.2`, the latest version of `Next`, and Tailwind CSS `2.2.4`. Check out the `package.json` file for a complete list of dependencies.
 
 ## Use create-next-app
 
-Create Next App is the fastest way to begin using this blog starter. You can use NPM or Yarn, but Yarn is recommended. 
+Create Next App is the fastest way to begin using this blog starter. You can use NPM or Yarn, but Yarn is recommended.
 
-1. Replace `my-new-blog` in either of the examples below (with whatever you'd like to use as the root directory), and run the command. 
+1. Replace `my-new-blog` in either of the examples below (with whatever you'd like to use as the root directory), and run the command.
 
 ```
 # with npm
@@ -33,13 +35,13 @@ npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starte
 yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main my-new-blog
 ```
 
-2. Once the project is created, change into the directory. 
+2. Once the project is created, change into the directory.
 
 ```shell
 cd my-new-blog
 ```
 
-3. Install dependencies. 
+3. Install dependencies.
 
 ```shell
 yarn install
@@ -53,7 +55,7 @@ npm install
 
 ### Development server
 
-You can start the development server with `yarn`, `npm`, or `next`. 
+You can start the development server with `yarn`, `npm`, or `next`.
 
 ```shell
 # yarn
@@ -73,15 +75,16 @@ Once the server is running, visit [http://localhost:3000](http://localhost:3000)
 Set up each of the constants, much like you would a `.env`, in the `lib/constants.js` file.
 
 ```javascript
-export const EXAMPLE_PATH = 'blog-starter'
-export const CMS_NAME = 'Markdown'
-export const HOME_OG_IMAGE_URL = 'https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg'
-export const BLOG_NAME = 'Next.js Blog Starter'
-export const KEYWORDS = 'starter, blog, next.js, template'
-export const DESCRIPTION = 'A starter blog template for Next.js'
-export const AUTHOR = 'sandypockets'
-export const LANG = 'en-CA'
-export const GITHUB_REPO = 'https://github.com/sandypockets'
+export const EXAMPLE_PATH = "blog-starter";
+export const CMS_NAME = "Markdown";
+export const HOME_OG_IMAGE_URL =
+  "https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg";
+export const BLOG_NAME = "Next.js Blog Starter";
+export const KEYWORDS = "starter, blog, next.js, template";
+export const DESCRIPTION = "A starter blog template for Next.js";
+export const AUTHOR = "sandypockets";
+export const LANG = "en-CA";
+export const GITHUB_REPO = "https://github.com/sandypockets";
 ```
 
 ### Generate a sitemap and robots.txt
@@ -104,6 +107,7 @@ When you're ready to test it:
 If you see the xml sitemap, then it was successful.
 
 ### RSS Feed
+
 An RSS feed is available for the blog at `/feed.xml`. However, you must first configure the RSS generator to use your own URL.
 
 1. Open the `scripts/generate-rss.mjs` file.
@@ -131,6 +135,7 @@ cp .env.local.example .env.local
 2. Grab your Google tag ID from your Analytics account, and replace the `G-XXXXXXXXXX` in the new `.env.local` file you just created.
 
 ### Set up SendGrid
+
 You will need a free SendGrid account, which allows you to send up to 100 emails each day. Replace the `REPLACE-WITH-YOUR-API-KEY` text in the `.env.exa
 
 1. Get your SendGrid API key from your SendGrid account.
@@ -181,11 +186,13 @@ Learn how to add content like blog posts or pages.
 > Note: The slug is the path that will be displayed, and is based on the title of your `.md` file. For example, `kobe.md` becomes `localhost:3000/posts/kobe`
 
 #### How it works
+
 Blog posts are stored in the `/_posts` directory as Markdown files. To create a new post, simply add a new markdown file (`.md`) to the `/_posts` directory. Each post must include the appropriate front matter.
 
 To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
 
 ##### Front matter
+
 An example of the required front matter:
 
 > Note: The formatting of the front matter is important. Ensure the indentation remains the same.
@@ -208,7 +215,7 @@ Adjust the value of each key as needed.
 
 ### Add a page
 
-Next.js makes routing easy. All pages live in the `/pages` directory. The file names used in that directory will map to the path in the browser. 
+Next.js makes routing easy. All pages live in the `/pages` directory. The file names used in that directory will map to the path in the browser.
 
 > Example: `/pages/cool-page.jsx` becomes `localhost:3000/pages/cool-page`
 
@@ -216,4 +223,4 @@ Next.js makes routing easy. All pages live in the `/pages` directory. The file n
 
 Global variables, like your blog's name, or your GitHub URL, can be managed in `/lib/constants.js`
 
-You can adjust the blog's metadata (some of which relies on the global variables described above) can be adjusted in the `/components/Layout/Meta.jsx` component. 
+You can adjust the blog's metadata (some of which relies on the global variables described above) can be adjusted in the `/components/Layout/Meta.jsx` component.

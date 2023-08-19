@@ -10,7 +10,7 @@ export const NormalLayout = ({ children }: Props) => {
   return (
     <div className="flex flex-col min-h-screen text-darker dark:text-light bg-light dark:bg-darker">
       <Header />
-      <main className="container mx-auto flex flex-col flex-grow items-center justify-center px-10">
+      <main className="sm:w-2/3 max-w-2xl md:mx-auto flex flex-col flex-grow items-center justify-start py-10 mx-10 sm:mt-20">
         {children}
       </main>
       <Footer />
@@ -22,9 +22,7 @@ export const MarkdownLayout = ({ children }: Props) => {
   return (
     <div className="min-h-screen text-darker dark:text-light bg-light dark:bg-darker">
       <Header />
-      <main className="container mx-auto items-center justify-center px-10">
-        {children}
-      </main>
+      <main className="px-10">{children}</main>
       <Footer />
     </div>
   );

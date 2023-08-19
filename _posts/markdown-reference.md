@@ -1,16 +1,18 @@
 ---
-title: 'Markdown reference'
+title: "Markdown reference"
 excerpt: "Sick of starters that accept markdown, but don't come with any built-in styling? Check out what works right out of the box."
-coverImage: '/assets/blog/markdown-reference/book.jpg'
-date: '2021-08-24T05:35:07.322Z'
+coverImage: "/assets/blog/markdown-reference/book.jpg"
+date: "2021/07/12"
 author:
   name: sandypockets
-  picture: '/assets/blog/authors/sandypockets_avatar.jpg'
+  picture: "/assets/blog/authors/sandypockets_avatar.jpg"
 ogImage:
-  url: '/assets/blog/nextjs-for-blogs/cover.jpg'
+  url: "/assets/blog/nextjs-for-blogs/cover.jpg"
+tags: [ポエム, テック]
 ---
 
 # Markdown examples
+
 Plenty of markdown starters don't come with any markdown styling. Your content to falls flat, and instead of spending the afternoon writing, you're nitpicking about padding around bullet points. Not this starter, everything is ready right out of the box. Check out how each element is styled below.
 
 ---
@@ -48,17 +50,16 @@ Plenty of markdown starters don't come with any markdown styling. Your content t
 ### Emphasis
 
 ```markdown
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Emphasis, aka italics, with _asterisks_ or _underscores_.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
 Combined emphasis with **asterisks and _underscores_**.
-
 ```
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Emphasis, aka italics, with _asterisks_ or _underscores_.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
 Combined emphasis with **asterisks and _underscores_**.
 
@@ -70,12 +71,14 @@ Combined emphasis with **asterisks and _underscores_**.
 > This is a block quote
 
 > Another blockquote
+>
 > > With a nested reply
 ```
 
 > This is a block quote
 
 > Another blockquote
+>
 > > With a nested reply
 
 ---
@@ -130,7 +133,7 @@ example.com.
 
 ![Some image alt](https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1635&q=80)
 
-You can use relative image paths too. 
+You can use relative image paths too.
 
 ```markdown
 ![Some alt text](/assets/blog/a-nextjs-blog-starter-you-actually-want-to-use/tree-minimal.jpg)
@@ -172,11 +175,11 @@ export default function SomeComponent() {
         <p>Some other content</p>
       </div>
     </>
-  )
+  );
 }
 ```
 
-The syntax highlighting isn't just for React either. It supports most common languages. 
+The syntax highlighting isn't just for React either. It supports most common languages.
 
 ##### HTML
 
@@ -184,8 +187,8 @@ The syntax highlighting isn't just for React either. It supports most common lan
 <!DOCTYPE html>
 <html>
   <body>
-  <h1>Some title</h1>
-  <p>Some content</p>
+    <h1>Some title</h1>
+    <p>Some content</p>
   </body>
 </html>
 ```
@@ -250,7 +253,7 @@ And many more. Check out the [full list of supported langauges](https://prismjs.
 
 ### Collapsible summaries
 
-```markdown
+````markdown
 <details>
   <summary>Click to open or close</summary>
       ```ejs
@@ -275,7 +278,7 @@ And many more. Check out the [full list of supported langauges](https://prismjs.
   </div>
       ```
 </details>
-```
+````
 
 <br/>
 
@@ -305,4 +308,3 @@ And many more. Check out the [full list of supported langauges](https://prismjs.
 ```
 
 </details>
-

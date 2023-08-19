@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,
   faGithub,
   faFacebook,
   faInstagram,
@@ -22,7 +20,6 @@ const Footer = () => {
         <a
           href={personalTwitter}
           target="_blank"
-          // className="text-[#1DA1F2] hover:opacity-70"
           className="text-black dark:text-white hover:opacity-70 "
         >
           <FontAwesomeIcon icon={faXTwitter} size="lg" />
