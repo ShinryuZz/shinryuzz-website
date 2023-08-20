@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { personalTwitter } from "@/const/links";
 import LinkWithUnderline from "../atom/LinkWithUnderline";
+import PersonalIcon from "../atom/PersonalIcon";
 
 export const TopContent = () => {
   return (
@@ -26,15 +27,7 @@ export const TopContent = () => {
       </div>
 
       <div className="flex w-full md:w-1/3 justify-center md:flex-none">
-        <a href={personalTwitter} target="_blank">
-          <Image
-            className="rounded-full hover:scale-105 duration-150 hover:shadow-lg hover:shadow-red"
-            src="/kangaroo-space.png"
-            alt="shinryuzz-icon"
-            width={240}
-            height={240}
-          />
-        </a>
+        <PersonalIcon />
       </div>
     </div>
   );
