@@ -5,14 +5,14 @@ const Education = () => {
   return (
     <div className="w-full flex flex-col items-start gap-4 my-10">
       <TitleWithUnderline title="Education 🎓" />
-      <ul className="flex flex-col gap-3 list-disc list-inside ml-2 text-red">
+      <ul className="flex flex-col gap-3 list-disc ml-5 text-red">
         <li>
           <span className="text-darker dark:text-light">
             2020年
             <a
               href="https://kumamoto-nct.ac.jp/"
               target="_blank"
-              className="hover:opacity-70"
+              className="hover:opacity-70 break-keep"
             >
               &nbsp;熊本高等専門学校 制御情報システム工学科&nbsp;
             </a>
@@ -20,7 +20,7 @@ const Education = () => {
           </span>
         </li>
         <li>
-          <span className="text-darker dark:text-light">
+          <span className="text-darker dark:text-light break-keep">
             2023年
             <a
               href="https://www.eng.kumamoto-u.ac.jp/"
@@ -33,7 +33,7 @@ const Education = () => {
           </span>
         </li>
         <li>
-          <span className="text-darker dark:text-light">
+          <span className="text-darker dark:text-light break-keep">
             現在
             <a
               href="https://www.fast.kumamoto-u.ac.jp/gsst/"
