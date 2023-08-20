@@ -12,7 +12,7 @@ const PostsFeed = ({ posts }: Props) => {
   return (
     <div className="w-full flex flex-col items-start gap-4 my-10">
       <TitleWithUnderline title="Blog 📋" />
-      <div className="flex flex-col items-start gap-3">
+      <div className="w-full flex flex-col items-start gap-3">
         {posts?.map((post) => (
           <PostLink key={post.title} post={post} />
         ))}
