@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { personalTwitter } from "@/const/links";
-import Link from "next/link";
+import LinkWithUnderline from "../atom/LinkWithUnderline";
 
 export const TopContent = () => {
   return (
@@ -20,12 +20,7 @@ export const TopContent = () => {
           ソフトウェアエンジニアとしてキャリアを築いていきたいと思っている。
           <br />
           <div className="mt-2">
-            <Link
-              href="/about"
-              className="text-cyan-800  border-b border-cyan-800 pb-1 hover:opacity-70"
-            >
-              more about me
-            </Link>
+            <LinkWithUnderline href="/about" text="more about me" />
           </div>
         </div>
       </div>

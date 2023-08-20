@@ -6,7 +6,7 @@ type Props = {
   post: Post;
 };
 
-const PostLine = ({ post }: Props) => {
+const PostLink = ({ post }: Props) => {
   return (
     <div className="flex flex-col">
       <div className="flex items-center justify-start gap-3">
@@ -29,4 +29,4 @@ const PostLine = ({ post }: Props) => {
   );
 };
 
-export default PostLine;
+export default PostLink;
