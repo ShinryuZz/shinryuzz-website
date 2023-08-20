@@ -17,7 +17,7 @@ const SocialLinks = () => {
           <a
             href={personalTwitter}
             target="_blank"
-            className="text-light hover:opacity-70"
+            className="text-darker dark:text-light hover:opacity-70"
           >
             X ( Twitter )
           </a>
@@ -26,7 +26,7 @@ const SocialLinks = () => {
           <a
             href={personalGithub}
             target="_blank"
-            className="text-light hover:opacity-70"
+            className="text-darker dark:text-light hover:opacity-70"
           >
             Github
           </a>
@@ -35,7 +35,7 @@ const SocialLinks = () => {
           <a
             href={personalInstagram}
             target="_blank"
-            className="text-light hover:opacity-70"
+            className="text-darker dark:text-light hover:opacity-70"
           >
             Instagram
           </a>
@@ -44,7 +44,7 @@ const SocialLinks = () => {
           <a
             href={personalFacebook}
             target="_blank"
-            className="text-light hover:opacity-70"
+            className="text-darker dark:text-light hover:opacity-70"
           >
             Facebook
           </a>

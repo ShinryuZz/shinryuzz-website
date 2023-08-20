@@ -22,7 +22,7 @@ const Bio = () => {
 
       <div className="w-full flex flex-col items-center mt-5">
         <PersonalIcon />
-        <p className="mt-4">僕のアイコン: キーボードを弾くカンガルー</p>
+        <p className="mt-5">僕のアイコン: キーボードを弾くカンガルー</p>
       </div>
     </div>
   );
