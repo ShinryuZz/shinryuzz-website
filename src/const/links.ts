@@ -1,4 +1,4 @@
-export const personalTwitter: string = "https://twitter.com/shinryuslpr1127";
+export const personalTwitter: string = "https://twitter.com/shinryuzz__";
 export const personalGithub: string = "https://github.com/shinryuzz";
 export const personalFacebook: string =
   "https://www.facebook.com/profile.php?id=100012067954842";
