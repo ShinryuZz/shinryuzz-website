@@ -8,9 +8,7 @@ export const TopContent = () => {
   return (
     <div className="w-full flex flex-wrap items-center md:justify-between gap-5">
       <div className="flex flex-col gap-6">
-        <h1 className="text-2xl sm:text-3xl font-bold">
-          Welcome my website 👋
-        </h1>
+        <h1 className="text-2xl sm:text-3xl font-bold">Hi there 👋</h1>
         <div className="text-justify max-w-sm">
           <div className="text-lg font-bold mb-1">
             しんりゅう (
