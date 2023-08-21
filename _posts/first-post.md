@@ -1,7 +1,7 @@
 ---
 title: "さいしょの投稿"
 excerpt: ""
-date: "2023/08/21"
+date: "2023/08/19"
 author: "@shinryuzz__"
 ogImage:
   url: ""
