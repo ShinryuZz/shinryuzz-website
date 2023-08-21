@@ -4,13 +4,9 @@ import { getPostBySlug, getAllPosts } from "../../lib/blog";
 import markdownToHtml from "../../lib/markdownToHtml";
 import Head from "next/head";
 import MDFormatter from "../../components/blog/MDFormatter";
-import { Post } from "@/@types/types";
+import { PostProps } from "@/@types/types";
 
-type Props = {
-  post: Post;
-};
-
-export default function Post({ post }: Props) {
+export default function Post({ post }: PostProps) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;

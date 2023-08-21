@@ -1,13 +1,9 @@
-import { Post } from "@/@types/types";
+import { PostProps } from "@/@types/types";
 import PostHeader from "./PostHeader";
 import PostFooter from "./PostFooter";
 import PostBody from "./PostBody";
 
-type Props = {
-  post: Post;
-};
-
-export default function MDFormatter({ post }: Props) {
+export default function MDFormatter({ post }: PostProps) {
   return (
     <div className="max-w-3xl mx-auto">
       <PostHeader post={post} />

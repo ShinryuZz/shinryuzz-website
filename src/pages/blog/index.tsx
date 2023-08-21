@@ -1,13 +1,9 @@
-import { Post } from "@/@types/types";
+import { PostsProps } from "@/@types/types";
 import PostsFeed from "@/components/top/PostsFeed";
 import React from "react";
 import { getAllPosts } from "@/lib/blog";
 
-type Props = {
-  posts: Post[];
-};
-
-const BlogPage = ({ posts }: Props) => {
+const BlogPage = ({ posts }: PostsProps) => {
   return <PostsFeed posts={posts} />;
 };
 

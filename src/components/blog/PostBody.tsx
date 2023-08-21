@@ -1,12 +1,8 @@
 import React from "react";
 import markdownStyles from "./markdown-styles.module.css";
-import { Post } from "@/@types/types";
+import { PostProps } from "@/@types/types";
 
-type Props = {
-  post: Post;
-};
-
-const PostBody = ({ post }: Props) => {
+const PostBody = ({ post }: PostProps) => {
   return (
     <div
       className={markdownStyles["markdown"]}

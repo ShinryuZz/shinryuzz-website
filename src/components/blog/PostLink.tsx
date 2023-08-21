@@ -1,12 +1,8 @@
-import { Post } from "@/@types/types";
+import { PostProps } from "@/@types/types";
 import Link from "next/link";
 import React from "react";
 
-type Props = {
-  post: Post;
-};
-
-const PostLink = ({ post }: Props) => {
+const PostLink = ({ post }: PostProps) => {
   return (
     <div className="w-full flex flex-col gap-1">
       <Link

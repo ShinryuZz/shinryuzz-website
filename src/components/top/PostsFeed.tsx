@@ -1,15 +1,11 @@
 import React from "react";
-import { Post } from "@/@types/types";
+import { PostsProps } from "@/@types/types";
 import PostLink from "../blog/PostLink";
 import TitleWithUnderline from "../atom/TitleWithUnderline";
 import LinkWithUnderline from "../atom/LinkWithUnderline";
 import { useRouter } from "next/router";
 
-type Props = {
-  posts: Post[];
-};
-
-const PostsFeed = ({ posts }: Props) => {
+const PostsFeed = ({ posts }: PostsProps) => {
   const router = useRouter();
   const pathname = router.pathname;
   return (

@@ -1,13 +1,9 @@
 import TopContent from "@/components/top/TopContent";
 import PostsFeed from "@/components/top/PostsFeed";
 import { getAllPosts } from "@/lib/blog";
-import { Post } from "@/@types/types";
+import { PostsProps } from "@/@types/types";
 
-type Props = {
-  posts: Post[];
-};
-
-export default function Home({ posts }: Props) {
+export default function Home({ posts }: PostsProps) {
   // console.log("posts", posts);
   return (
     <div className="w-full flex flex-col justify-start items-center gap-5">

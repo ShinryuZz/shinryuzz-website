@@ -26,3 +26,11 @@ export type Meta = {
   date: string;
   slug: string;
 };
+
+export type PostProps = {
+  post: Post;
+};
+
+export type PostsProps = {
+  posts: Post[];
+};
