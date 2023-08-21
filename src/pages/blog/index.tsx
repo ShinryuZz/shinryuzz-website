@@ -2,9 +2,15 @@ import { PostsProps } from "@/@types/types";
 import PostsFeed from "@/components/top/PostsFeed";
 import React from "react";
 import { getAllPosts } from "@/lib/blog";
+import PageHead from "@/components/layout/PageHead";
 
 const BlogPage = ({ posts }: PostsProps) => {
-  return <PostsFeed posts={posts} />;
+  return (
+    <>
+      <PageHead title="Blog" />
+      <PostsFeed posts={posts} />
+    </>
+  );
 };
 
 export async function getStaticProps() {

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { WEBSITE_NAME } from "@/const/constants";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -23,7 +24,7 @@ const Header = () => {
     <header className="p-6 z-10">
       <nav className="w-full flex sm:justify-around justify-between items-center ">
         <Link href="/" className="hover:text-cyan-800 flex items-center gap-3">
-          <h1 className="text-xl">shinryuzz</h1>
+          <h1 className="text-xl">{WEBSITE_NAME}</h1>
         </Link>
 
         <div className="items-center sm:hidden">
