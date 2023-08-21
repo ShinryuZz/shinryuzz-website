@@ -1,66 +1,45 @@
 ---
-title: "Next.js + Typescript + TailwindCSS で Markdownブログサイトを立ち上げた"
+title: "さいしょの投稿"
 excerpt: ""
 date: "2023/08/21"
 author: "@shinryuzz__"
 ogImage:
   url: ""
-# tags: [はじめての投稿, Next.js, Typescript, TailwindCSS]
-tags: [はじめての投稿, Next.js, Typescript, TailwindCSS]
+tags: [Hello world!, ポエム]
 ---
 
 # はじめに
 
 前々から自作のブログサイトが欲しいなあと思い、お盆休みを活用して作成しました。
 
-自前のブログサイトを持っていなくとも、世の中には[Qiita](https://qiita.com/)、 [Zenn](https://zenn.dev/)、[note](https://note.com/)、[はてなブログ](https://hatenablog.com/)などの様々なブログプラットフォームがあります。もちろんこれらのサイトも活用していきます。（これまでアウトプットはあまりしていませんでしたが。）
+自前のブログサイトを持っていなくとも、世の中には [Qiita](https://qiita.com/)、 [Zenn](https://zenn.dev/)、[note](https://note.com/)、[はてなブログ](https://hatenablog.com/) などの様々なブログプラットフォームがあります。
+今の自分にとっては、これらのプラットフォームを活用するだけでも必要十分ではあると思っているのですが、でもやっぱり自作のサイトを運営したい！という気持ちが強く、要は自己満足のために作りました。
 
-その時に考えるべきことは、これらのサイトをどう使い分けるか、ということになるのですが、これはこれから試行錯誤しながらゆっくり決めていこうと思います。
-今考えている時点では、
+そういったときに考えることは、既存のプラットフォームとこのサイトをどのように使い分けるのか、ということになるのですが、これはこれから色々と試行錯誤しながら、ゆっくり決めていこうと思います。
 
-- Qiita&Zenn: 技術系のアウトプットする（Zenn ベースで Qiita には Zenn へのリンクを貼るくらい？）
-- note: エッセイなど作品として投稿する
-- 本ブログサイト: エンジニアとして感じたことやこれまでの振り返りを述べる。
+今のところ、以下のように使い分けようなかと考えています。
 
-みたいな感じで行こうかなと思っています。変わるかもしれんけど。
+- Qiita&Zenn: 技術系のアウトプット用（Zenn と Qiita の使い分け方は未定）
+- note: エッセイ・散文といった作品()の投稿用
+- このサイト: 人間として/エンジニアとして感じたことやこれまでの振り返り用
 
-どうぞよろしくお願いします。
+Qiita&Zenn と note は使い分けられると思うんですが、これら２つとこのサイトの明確な使い分けは正直できないと思います。ですので、結局その時々の気分で決めることになると思います。
 
-# ブログ構築のために
+# ブログ構築にあたって
 
-このサイトは、Next.js, Typescript, TailwindCSS で構築しており、Markdown ファイル形式で記事を管理するようにしています。
-ホスティングはもちろん Vercel です。
+このサイトは、Next.js, Typescript, TailwindCSS で構築しており、Vercel でホスティングしています。お決まりの技術スタックです。
+また、Markdown ファイル形式で１つ１つ記事を管理するようにしています。
 
-カラーテーマとシンタックスハイライトは Dracula をカスタマイズしたものになっています。
+カラーパレットとシンタックスハイライトは [Dracula](https://draculatheme.com/) をカスタマイズしたものになっています。これもかなり有名ですが、やっぱりかわいいですよね。
 
-やっぱり SSG は訪問者が快適にサイト内を探索できるので、素晴らしい技術だと思います。
+そして SSG。これも欠かせません。ページ遷移がサクサクヌルヌルで、非常に気持ちがいいです。
 
-開発からデプロイまでの詳細なプロセスは、別の記事として投稿したいと思います。
+本ブログの開発からデプロイまでのプロセスは、別の記事として投稿したいと思います。
 
-Markdown なので、もちろんコードブロックの挿入なんかもできます。 ↓
+# おわりに
 
-```ruby
-class ApplicationController < ActionController::Base
-  before_action :find_current_user
+現時点の機能・デザインには、我ながらかなり満足しています。特にスタイリングは、かなり緻密に時間をかけて調整しましたし。
 
-  helper_method :has_session?
+追加の機能もこれからどんどん実装していきたいと思います。
 
-  def logged_in
-  redirect_to new_session_path unless has_session?
-  end
-
-  def find_current_user
-  @current_user = (User.find(session[:user_id]) if has_session?)
-  end
-
-  def has_session?
-  session[:user_id].present?
-  end
-end
-```
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
+ゆっくりゆっくり投稿していこうと思うので、どうぞよろしくお願いいたします。
