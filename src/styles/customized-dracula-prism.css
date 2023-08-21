@@ -6,6 +6,9 @@
  *
  * @author Alexandre Paradis <service.paradis@gmail.com>
  * @version 1.0
+ *
+ * Customized by Shinryuzz (https://github.com/shinryuzz )
+ *
  */
 
 code[class*="language-"],
@@ -58,10 +61,22 @@ pre[class*="language-"] {
   background: #373a4d;
 }
 
+/* Scroll bars */
+::-webkit-scrollbar,
+::-webkit-scrollbar-corner {
+  height: 0.5rem;
+  background-color: #373a4d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #53597c;
+}
+
 /* Inline code */
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
+  border-color: #eaeada;
 }
 
 .token.comment,
