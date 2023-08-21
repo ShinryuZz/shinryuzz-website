@@ -8,7 +8,7 @@ type Props = {
 
 const PostLink = ({ post }: Props) => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col gap-1">
       <Link
         href={`/blog/${post.slug}`}
         key={post.title}
@@ -16,13 +16,13 @@ const PostLink = ({ post }: Props) => {
       >
         <span className="hover:underline">{post.title}</span>
       </Link>
-      <div className="flex justify-between">
-        <div className="flex items-center justify-start gap-3">
+      <div className="flex justify-between flex-wrap">
+        <div className="flex items-center justify-start flex-wrap ">
           {post.tags?.map((tag) => (
             <Link
               href={"/"}
               key={tag}
-              className="text-pink-400 hover:opacity-70 hover:underline"
+              className="text-pink-400 hover:opacity-70 hover:underline mr-3"
             >
               {`#${tag}`}
             </Link>
