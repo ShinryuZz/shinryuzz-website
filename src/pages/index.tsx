@@ -10,7 +10,7 @@ type Props = {
 export default function Home({ posts }: Props) {
   // console.log("posts", posts);
   return (
-    <div className="flex flex-col justify-start items-center gap-5">
+    <div className="w-full flex flex-col justify-start items-center gap-5">
       <TopContent />
       <PostsFeed posts={posts} />
       <div className="stars"></div>

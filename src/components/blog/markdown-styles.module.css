@@ -48,23 +48,23 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-3;
 }
 
 .markdown ul {
-  @apply list-disc ml-10 font-light;
+  @apply list-disc ml-5 font-light;
 }
 
 .markdown ul li {
-  @apply px-0 py-2;
+  @apply px-0 py-1;
 }
 
 .markdown ol {
-  @apply list-decimal mx-10 font-light;
+  @apply list-decimal mx-6 font-light;
 }
 
 .markdown ol li {
-  @apply px-0 py-2;
+  @apply px-0 py-1;
 }
 
 .markdown hr {

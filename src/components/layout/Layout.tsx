@@ -22,7 +22,9 @@ export const MarkdownLayout = ({ children }: Props) => {
   return (
     <div className="min-h-screen text-darker dark:text-light bg-light dark:bg-darker">
       <Header />
-      <main className="px-10">{children}</main>
+      <main className="sm:w-2/3 max-w-2xl mx-auto px-10 sm:px-0">
+        {children}
+      </main>
       <Footer />
     </div>
   );
