@@ -4,7 +4,7 @@ import Image from "next/image";
 
 type Props = {
   isShadow?: boolean;
-  size: number;
+  size?: number;
 };
 
 const PersonalIcon = ({ isShadow = true, size = 240 }: Props) => {
