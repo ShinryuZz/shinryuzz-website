@@ -4,6 +4,7 @@ import Bio from "@/components/about/Bio";
 import Education from "@/components/about/Education";
 import TopText from "@/components/about/TopText";
 import PageHead from "@/components/layout/PageHead";
+import Others from "@/components/about/Others";
 
 const AboutPage = () => {
   return (
@@ -14,6 +15,7 @@ const AboutPage = () => {
         <Bio />
         <SocialLinks />
         <Education />
+        <Others />
       </div>
     </>
   );
