@@ -28,7 +28,7 @@ const Header = () => {
         </Link>
 
         <div className="items-center sm:hidden">
-          <button onClick={handleMenuToggle}>
+          <button onClick={handleMenuToggle} aria-label="toggle-dark-mode">
             <FontAwesomeIcon icon={faBars} size="lg" />
           </button>
         </div>
