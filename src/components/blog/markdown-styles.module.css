@@ -48,7 +48,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-3;
+  @apply my-3 text-base;
 }
 
 .markdown ul {

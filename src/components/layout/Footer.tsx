@@ -1,52 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faFacebook,
-  faInstagram,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  personalGithub,
-  personalTwitter,
-  personalFacebook,
-  personalInstagram,
-} from "@/const/links";
 
 const Footer = () => {
   return (
     <footer className="w-full p-5 flex flex-col justify-center items-center gap-3">
-      <div className="flex gap-8 items-center justify-center">
-        <a
-          href={personalTwitter}
-          target="_blank"
-          className="text-black dark:text-white hover:opacity-70 "
-        >
-          <FontAwesomeIcon icon={faXTwitter} size="lg" />
-        </a>
-        <a
-          href={personalGithub}
-          target="_blank"
-          className="text-[#24292E] dark:text-[#FAFBFC] hover:opacity-70"
-        >
-          <FontAwesomeIcon icon={faGithub} size="lg" />
-        </a>
-        <a
-          href={personalInstagram}
-          target="_blank"
-          className="text-[#E1306C] hover:opacity-70"
-        >
-          <FontAwesomeIcon icon={faInstagram} size="lg" />
-        </a>
-        <a
-          href={personalFacebook}
-          target="_blank"
-          className="text-[#3b5998] hover:opacity-70"
-        >
-          <FontAwesomeIcon icon={faFacebook} size="lg" />
-        </a>
-      </div>
-
       <div className="flex gap-3 text-sm">
         <span className="text-darker dark:text-light">
           &copy; 2023 shinryuzz. All Rights Reserved.
