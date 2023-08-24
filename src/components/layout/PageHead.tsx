@@ -11,7 +11,7 @@ const PageHead = ({ title }: Props) => {
   return (
     <Head>
       <title>
-        {title} | {WEBSITE_NAME}
+        {title}&nbsp;|&nbsp;{WEBSITE_NAME}
       </title>
     </Head>
   );
