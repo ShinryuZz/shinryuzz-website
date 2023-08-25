@@ -4,7 +4,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/blog";
 import markdownToHtml from "../../lib/markdownToHtml";
 import Head from "next/head";
 import MDFormatter from "../../components/blog/MDFormatter";
-import { PostProps } from "@/@types/types";
+import { FieldContents, PostProps } from "@/@types/types";
 
 export default function Post({ post }: PostProps) {
   const router = useRouter();
@@ -30,14 +30,8 @@ export default function Post({ post }: PostProps) {
 }
 
 export const getStaticProps = async ({ params }: { params: any }) => {
-  const post = await getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
-    "author",
-    "content",
-    "ogImage",
-  ]);
+  const fields: FieldContents[] = ["title", "date", "slug", "content", "tags"];
+  const post = await getPostBySlug(params.slug, fields);
   const content = await markdownToHtml(post.content || "");
 
   return {
