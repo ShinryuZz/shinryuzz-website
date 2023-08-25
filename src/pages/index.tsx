@@ -1,7 +1,7 @@
 import TopContent from "@/components/top/TopContent";
 import PostsFeed from "@/components/top/PostsFeed";
 import { getAllPosts } from "@/lib/blog";
-import { PostsProps } from "@/@types/types";
+import { FieldContents, PostsProps } from "@/@types/types";
 import PageHead from "@/components/layout/PageHead";
 
 export default function Home({ posts }: PostsProps) {
@@ -19,7 +19,8 @@ export default function Home({ posts }: PostsProps) {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts(["title", "date", "slug", "tags"]);
+  const fields: FieldContents[] = ["title", "date", "slug", "tags"];
+  const posts = await getAllPosts(fields);
   return {
     props: { posts },
   };

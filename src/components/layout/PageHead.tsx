@@ -7,7 +7,6 @@ type Props = {
 };
 
 const PageHead = ({ title }: Props) => {
-  console.log(title);
   return (
     <Head>
       <title>

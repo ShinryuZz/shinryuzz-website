@@ -21,6 +21,8 @@ export type FieldContents =
 
 export type PostFields = Array<FieldContents | null>;
 
+export type Tag = string;
+
 export type Meta = {
   title: string;
   date: string;
