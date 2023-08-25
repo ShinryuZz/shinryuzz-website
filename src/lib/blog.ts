@@ -1,7 +1,7 @@
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
-import { Post, PostFields } from "@/@types/types";
+import { Post, PostFields, Tag } from "@/@types/types";
 
 const postDir = join(process.cwd(), "_posts");
 
@@ -34,6 +34,14 @@ export const getPostBySlug = (
   return items;
 };
 
+export const getPostsByTag = (tag: Tag, fields: PostFields = []) => {
+  const slugs = getPostSlugs();
+  return slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    .filter((post) => post.tags.includes(tag))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+};
+
 export const getAllPosts = async (fields: PostFields = []): Promise<Post[]> => {
   const slugs = await getPostSlugs();
   const posts = await Promise.all(
@@ -43,4 +51,12 @@ export const getAllPosts = async (fields: PostFields = []): Promise<Post[]> => {
       .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   );
   return posts;
+};
+
+export const getAllTags = async () => {
+  const posts = await getAllPosts(["tags"]);
+
+  const allPostTags = posts?.flatMap((post: Post) => post.tags).sort();
+
+  return Array.from(new Set(allPostTags));
 };
