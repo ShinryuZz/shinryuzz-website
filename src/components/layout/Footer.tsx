@@ -1,12 +1,14 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full p-5 flex flex-col justify-center items-center gap-3">
-      <div className="flex gap-3 text-sm">
-        <span className="text-darker dark:text-light">
-          &copy; 2023 shinryuzz. All Rights Reserved.
-        </span>
+    <footer className="w-full p-5 flex flex-col justify-center items-center gap-3 text-sm">
+      <Link href="/privacy-policy" className="hover:text-cyan-800 ">
+        Privacy Policy
+      </Link>
+      <div className="flex gap-3 ">
+        <span>&copy; 2023 shinryuzz. All Rights Reserved.</span>
 
         {/* <span className="hidden sm:block">|</span>
 
