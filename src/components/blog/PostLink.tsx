@@ -1,6 +1,7 @@
 import { PostProps } from "@/@types/types";
 import Link from "next/link";
 import React from "react";
+import TagsListWithSharp from "../atom/TagsListWithSharp";
 
 const PostLink = ({ post }: PostProps) => {
   return (
@@ -13,17 +14,7 @@ const PostLink = ({ post }: PostProps) => {
         <span className="hover:underline">{post.title}</span>
       </Link>
       <div className="flex justify-between flex-wrap">
-        <div className="flex items-center justify-start flex-wrap ">
-          {post.tags?.map((tag) => (
-            <Link
-              href={"/"}
-              key={tag}
-              className="text-pink-400 hover:opacity-70 hover:underline mr-3"
-            >
-              {`#${tag}`}
-            </Link>
-          ))}
-        </div>
+        <TagsListWithSharp tags={post.tags} />
         <span className=" text-cyan-800">{post.date}</span>
       </div>
     </div>
