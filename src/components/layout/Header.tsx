@@ -6,13 +6,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { WEBSITE_NAME } from "@/const/constants";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleMenuToggle = () => setIsOpen(!isOpen);
   const handleMenuClose = () => setIsOpen(false);
 
   const { isDarkMode, toggle } = useDarkMode();
+
+  const tail = router.asPath.split("/")[1];
+  const currentPath = tail ? tail : "home";
 
   const pages: string[] = ["home", "about", "blog", "photos"];
 
@@ -22,7 +28,7 @@ const Header = () => {
 
   return (
     <header className="p-6 z-10">
-      <nav className="w-full flex sm:justify-around justify-between items-center ">
+      <nav className="w-full flex sm:justify-around justify-between items-center">
         <Link href="/" className="hover:text-cyan-800 flex items-center gap-3">
           <h1 className="text-xl">{WEBSITE_NAME}</h1>
         </Link>
@@ -45,7 +51,9 @@ const Header = () => {
                 key={page}
                 href="/"
                 onClick={handleMenuClose}
-                className="hover:text-cyan-800 hover:border-b border-cyan-800"
+                className={`hover:text-cyan-800 hover:border-b border-cyan-800 ${
+                  page == currentPath && "border-b"
+                }`}
               >
                 Home
               </Link>
@@ -54,7 +62,9 @@ const Header = () => {
                 key={page}
                 href={`/${page}`}
                 onClick={handleMenuClose}
-                className="hover:text-cyan-800 hover:border-b border-cyan-800"
+                className={`hover:text-cyan-800 hover:border-b border-cyan-800 ${
+                  page == currentPath && "border-b"
+                }`}
               >
                 {capitalize(page)}
               </Link>
