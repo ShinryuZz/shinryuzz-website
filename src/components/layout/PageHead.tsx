@@ -10,7 +10,7 @@ const PageHead = ({ title }: Props) => {
   return (
     <Head>
       <title>
-        {title}&nbsp;|&nbsp;{WEBSITE_NAME}
+        {title} | {WEBSITE_NAME}
       </title>
     </Head>
   );

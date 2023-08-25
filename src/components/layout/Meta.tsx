@@ -4,6 +4,7 @@ import {
   TWITTER_ID,
   WEBSITE_DESCRIPTION,
   WEBSITE_KEYWORDS,
+  WEBSITE_URL,
 } from "@/const/constants";
 
 const Meta = () => {
@@ -11,7 +12,7 @@ const Meta = () => {
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
-      <meta property="og:image" content="/og-image.svg" />
+      <meta property="og:image" content={`${WEBSITE_URL}/og-image.svg`} />
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content={WEBSITE_DESCRIPTION} />
