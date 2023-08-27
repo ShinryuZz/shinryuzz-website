@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node ./scripts/generate-sitemap.mjs && node ./scripts/generate-rss.mjs",
     "start": "next start",
     "lint": "next lint"
   },
@@ -39,8 +40,11 @@
   },
   "devDependencies": {
     "@types/prismjs": "^1.26.0",
+    "globby": "^13.2.2",
+    "prettier": "^3.0.2",
     "rehype-code-titles": "^1.2.0",
     "rehype-prism-plus": "^1.6.3",
+    "rss": "^1.2.2",
     "tailwind-dracula": "^1.1.0"
   }
 }
