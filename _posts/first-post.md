@@ -5,7 +5,7 @@ date: "2023/08/19"
 author: "@shinryuzz__"
 ogImage:
   url: ""
-tags: [Hello world!, ポエム]
+tags: [HelloWorld!, Essay]
 ---
 
 # はじめに
