@@ -4,7 +4,7 @@ import SpotifyFrame from "./SpotifyFrame";
 
 const Others = () => {
   return (
-    <div className="w-full flex flex-col items-start gap-4 my-10">
+    <div className="w-full flex flex-col items-start gap-4">
       <TitleWithUnderline title="Others 🪴" />
       <SpotifyFrame />
     </div>

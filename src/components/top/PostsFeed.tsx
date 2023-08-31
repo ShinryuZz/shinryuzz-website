@@ -9,12 +9,10 @@ const PostsFeed = ({ posts }: PostsProps) => {
   const router = useRouter();
   const pathname = router.pathname;
   return (
-    <div className="w-full flex flex-col items-start gap-4 my-10">
+    <div className="w-full flex flex-col items-start gap-4">
       <TitleWithUnderline title="Blog 📋" />
       <div className="w-full flex flex-col items-start gap-3">
-        {posts?.map((post) => (
-          <PostLink key={post.title} post={post} />
-        ))}
+        {posts?.map((post) => <PostLink key={post.title} post={post} />)}
       </div>
       {pathname !== "/blog" && (
         <LinkWithUnderline href="/blog" text="see all posts" />

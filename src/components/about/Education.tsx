@@ -3,7 +3,7 @@ import TitleWithUnderline from "../atom/TitleWithUnderline";
 
 const Education = () => {
   return (
-    <div className="w-full flex flex-col items-start gap-4 my-10">
+    <div className="w-full flex flex-col items-start gap-4">
       <TitleWithUnderline title="Education 🎓" />
       <ul className="flex flex-col gap-3 list-disc ml-5 text-red">
         <li>

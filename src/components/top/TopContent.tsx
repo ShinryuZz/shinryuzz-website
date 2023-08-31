@@ -6,10 +6,10 @@ import { TWITTER_ID } from "@/const/constants";
 
 export const TopContent = () => {
   return (
-    <div className="w-full flex flex-wrap items-center md:justify-between gap-5">
-      <div className="flex flex-col gap-6">
+    <div className="w-full flex flex-wrap items-center justify-center lg:justify-between gap-5">
+      <div className="w-full lg:max-w-sm flex flex-col gap-6">
         <h1 className="text-2xl sm:text-3xl font-bold">Hi there 👋</h1>
-        <div className="text-justify max-w-sm">
+        <div className="text-justify w-full lg:max-w-sm">
           <div className="text-lg font-bold mb-1">
             しんりゅう (
             <a
@@ -33,7 +33,7 @@ export const TopContent = () => {
         </div>
       </div>
 
-      <div className="flex w-full md:w-1/3 justify-center md:flex-none">
+      <div className="flex w-full md:w-1/3 justify-center">
         <PersonalIcon />
       </div>
     </div>

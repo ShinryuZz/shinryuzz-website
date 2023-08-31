@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <>
       <PageHead title="About" />
-      <div className="flex flex-col justify-start items-center">
+      <div className="flex flex-col justify-center items-center gap-12 md:gap-16">
         <TopText />
         <Bio />
         <SocialLinks />

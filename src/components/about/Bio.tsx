@@ -4,7 +4,7 @@ import PersonalIcon from "../atom/PersonalIcon";
 
 const Bio = () => {
   return (
-    <div className="w-full flex flex-col items-start gap-4 my-10">
+    <div className="w-full flex flex-col items-start gap-4">
       <TitleWithUnderline title="Bio 🧑‍💻" />
       <div className="text-justify">
         熊本生まれ、熊本在住の22歳大学院生。

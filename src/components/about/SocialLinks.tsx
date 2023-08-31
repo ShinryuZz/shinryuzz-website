@@ -10,7 +10,7 @@ import {
 
 const SocialLinks = () => {
   return (
-    <div className="w-full flex flex-col items-start gap-4 my-10">
+    <div className="w-full flex flex-col items-start gap-4">
       <TitleWithUnderline title="Contact 🤙" />
       <ul className="flex flex-col gap-3 list-disc list-inside ml-2 text-red">
         <li>

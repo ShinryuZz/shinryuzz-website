@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full p-5 flex flex-col justify-center items-center gap-3 text-sm">
+    <footer className="w-full p-5 flex flex-col justify-center items-center gap-2 text-sm">
       <Link href="/privacy-policy" className="hover:text-cyan-800 ">
         Privacy Policy
       </Link>

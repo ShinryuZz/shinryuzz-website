@@ -9,10 +9,10 @@ export default function Home({ posts }: PostsProps) {
   return (
     <>
       <PageHead title="Home" />
-      <div className="w-full flex flex-col justify-start items-center gap-5">
+      <div className="w-full flex flex-col justify-start items-center gap-12 md:gap-16">
         <TopContent />
         <PostsFeed posts={posts} />
-        <div className="stars"></div>
+        {/* <div className="stars"></div> */}
       </div>
     </>
   );
