@@ -37,7 +37,8 @@ next-env.d.ts
 # markdown draft 
 _draft/
 
-
 public/sitemap.xml
 public/robots.txt
 public/feed.xml
+
+src/stories/assets/
