@@ -4,6 +4,9 @@ date: "2023/08/31"
 tags: [Career, Essay]
 ---
 
+
+こんにちは、しんりゅう ([@shinryuzz__](https://twitter.com/shinryuzz__))です。
+
 今日Youtube を開いたら、脳科学者 茂木健一郎さんの動画が流れてきました。
 
 タイトルは「[成功なんかしなくてもいいと思っているあなたへ](https://www.youtube.com/watch?v=CT7AqsGWkEA)」。

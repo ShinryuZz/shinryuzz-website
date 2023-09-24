@@ -9,6 +9,7 @@ tags: [HelloWorld!, Essay]
 ---
 
 # はじめに
+こんにちは、しんりゅう ([@shinryuzz__](https://twitter.com/shinryuzz__))です。
 
 前々から自作のブログサイトが欲しいなあと思い、お盆休みを活用して作成しました。
 

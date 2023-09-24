@@ -8,6 +8,8 @@ ogImage:
 tags: [Next.js, Lighthouse]
 ---
 
+こんにちは、しんりゅう ([@shinryuzz__](https://twitter.com/shinryuzz__))です。
+
 この記事では、生まれてピチピチなこのサイトを、Lighthouse を活用することで読み込み速度や SEO 対策などのパフォーマンスがあがるまでを示します。
 
 # Lighthouse とは
