@@ -1,10 +1,13 @@
+import { WEBSITE_NAME } from "@/const/constants";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID || "";
+
   return (
     <Html lang="ja">
       <Head>
+        <title>{WEBSITE_NAME}</title>
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
