@@ -32,7 +32,3 @@ export type Meta = {
 export type PostProps = {
   post: Post;
 };
-
-export type PostsProps = {
-  posts: Post[];
-};
