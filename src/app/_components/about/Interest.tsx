@@ -1,5 +1,5 @@
 import React from "react";
-import TitleWithUnderline from "../atom/TitleWithUnderline";
+import TitleWithUnderline from "../../../components/atom/TitleWithUnderline";
 
 const Interest = () => {
   return (

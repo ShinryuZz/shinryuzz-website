@@ -1,6 +1,6 @@
 import React from "react";
-import TitleWithUnderline from "../atom/TitleWithUnderline";
-import PersonalIcon from "../atom/PersonalIcon";
+import TitleWithUnderline from "../atoms/TitleWithUnderline";
+import PersonalIcon from "../atoms/PersonalIcon";
 
 const Bio = () => {
   return (

@@ -13,7 +13,7 @@ import {
   FacebookShareButton,
 } from "react-share";
 import { useRouter } from "next/router";
-import PersonalIcon from "../atom/PersonalIcon";
+import PersonalIcon from "@/app/_components/atoms/PersonalIcon";
 import Link from "next/link";
 
 type Props = {

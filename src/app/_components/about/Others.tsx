@@ -1,5 +1,5 @@
 import React from "react";
-import TitleWithUnderline from "../atom/TitleWithUnderline";
+import TitleWithUnderline from "../atoms/TitleWithUnderline";
 import SpotifyFrame from "./SpotifyFrame";
 
 const Others = () => {

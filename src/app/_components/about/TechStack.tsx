@@ -1,5 +1,5 @@
 import React from "react";
-import TitleWithUnderline from "../atom/TitleWithUnderline";
+import TitleWithUnderline from "@/app/_components/atoms/TitleWithUnderline";
 
 const TechStack = () => {
   return (

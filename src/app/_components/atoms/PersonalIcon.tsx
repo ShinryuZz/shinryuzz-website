@@ -1,5 +1,4 @@
 import React from "react";
-// import { personalTwitter } from "@/const/links";
 import Image from "next/image";
 
 type Props = {
@@ -9,7 +8,6 @@ type Props = {
 
 const PersonalIcon = ({ isShadow = true, size = 240 }: Props) => {
   return (
-    // <a href={personalTwitter} target="_blank">
     <Image
       className={`rounded-full  ${
         isShadow
@@ -21,7 +19,6 @@ const PersonalIcon = ({ isShadow = true, size = 240 }: Props) => {
       width={size}
       height={size}
     />
-    // </a>
   );
 };
 

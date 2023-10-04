@@ -1,10 +1,10 @@
 import React from "react";
-import SocialLinks from "@/components/about/SocialLinks";
-import Bio from "@/components/about/Bio";
-import Education from "@/components/about/Education";
-import TopText from "@/components/about/TopText";
-import PageHead from "@/components/layout/PageHead";
-import Others from "@/components/about/Others";
+import SocialLinks from "../_components/about/SocialLinks";
+import Bio from "../_components/about/Bio";
+import Education from "../_components/about/Education";
+import TopText from "../_components/about/TopText";
+import PageHead from "../_components/layout/PageHead";
+import Others from "../_components/about/Others";
 
 const AboutPage = () => {
   return (
