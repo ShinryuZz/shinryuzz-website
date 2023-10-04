@@ -1,6 +1,5 @@
-import TitleWithUnderline from "@/components/atom/TitleWithUnderline";
-import PageHead from "@/components/layout/PageHead";
-import React from "react";
+import TitleWithUnderline from "../_components/atoms/TitleWithUnderline";
+import PageHead from "../_components/layout/PageHead";
 
 const PrivacyPolicy = () => {
   return (
