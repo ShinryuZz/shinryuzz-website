@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { TWITTER_ID } from "@/const/constants";
 import { personalTwitter } from "@/const/links";
@@ -12,7 +14,7 @@ import {
   FacebookIcon,
   FacebookShareButton,
 } from "react-share";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import PersonalIcon from "@/app/_components/atoms/PersonalIcon";
 import Link from "next/link";
 
@@ -21,8 +23,9 @@ type Props = {
 };
 
 const PostFooter = ({ title }: Props) => {
-  const router = useRouter();
-  const currentURL = process.env.NEXT_PUBLIC_BASE_URL + router.asPath;
+  const path = usePathname();
+  console.log(path);
+  const currentURL = (process.env.NEXT_PUBLIC_BASE_URL as string) + path;
   const iconSize = 32;
 
   return (
