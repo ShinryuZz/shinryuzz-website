@@ -1,5 +1,5 @@
-import TopContent from "./_components/top/TopContent";
-import PostsFeed from "./_components/top/PostsFeed";
+import TopContent from "./_components/home/TopContent";
+import PostsFeed from "./_components/home/PostsFeed";
 import PageHead from "./_components/layout/PageHead";
 import PostLink from "./_components/blog/PostLink";
 import { getAllPosts } from "@/lib/blog";
