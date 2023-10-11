@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { WEBSITE_NAME } from "@/const/constants";
 import { MainContainer } from "./_components/layout/Container/MainContainer";
 import GoogleAnalytics from "./_components/GAnalytics";
+import Meta from "./_components/layout/Meta";
 
 export const metadata: Metadata = {
   title: WEBSITE_NAME,
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <Head>
         <title>{WEBSITE_NAME}</title>
+        <Meta />
         <GoogleAnalytics />
       </Head>
       <body>
