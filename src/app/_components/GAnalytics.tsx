@@ -2,26 +2,24 @@
 
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 
-import { existsGaId, GA_MEASUREMENT_ID, pageview } from "@/lib/gtag";
+import { GA_MEASUREMENT_ID, pageview } from "@/lib/gtag";
 
 const GoogleAnalytics = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (!existsGaId) {
-      return;
-    }
+    if (!searchParams) return;
     const url = pathname + searchParams.toString();
     pageview(url);
   }, [pathname, searchParams]);
 
   return (
     <>
-      {existsGaId && (
-        <>
+      {GA_MEASUREMENT_ID && (
+        <Suspense>
           <Script
             id="ga-url"
             defer
@@ -41,7 +39,7 @@ const GoogleAnalytics = () => {
             }}
             strategy="afterInteractive"
           />
-        </>
+        </Suspense>
       )}
     </>
   );
