@@ -1,10 +1,15 @@
+import { Metadata } from "next";
 import { getAllTags, getPostsByTag } from "../../../lib/blog";
-import PageHead from "../../_components/layout/PageHead";
 import TitleWithUnderline from "../../_components/atoms/TitleWithUnderline";
 import PostLink from "../../_components/blog/PostLink";
+import { createMetaTitle } from "@/lib/meta";
 
 type Props = {
   params: { slug: string };
+};
+
+export const metadata: Metadata = {
+  title: createMetaTitle("Tag"),
 };
 
 const fetchPostsData = async (slug: string) => {
@@ -18,7 +23,6 @@ const TagPage = async ({ params }: Props) => {
 
   return (
     <>
-      <PageHead title={tagName} />
       <div className="w-full flex flex-col justify-start items-start gap-3">
         <TitleWithUnderline title="Tag" />
         <h2 className="text-xl">#{tagName}</h2>

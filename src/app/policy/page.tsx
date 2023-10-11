@@ -1,10 +1,14 @@
+import { Metadata } from "next";
 import TitleWithUnderline from "../_components/atoms/TitleWithUnderline";
-import PageHead from "../_components/layout/PageHead";
+import { createMetaTitle } from "@/lib/meta";
+
+export const metadata: Metadata = {
+  title: createMetaTitle("About"),
+};
 
 const PrivacyPolicy = () => {
   return (
     <div>
-      <PageHead title="Privacy Policy" />
       <div className="flex flex-col justify-start items-start text-justify mb-5">
         <TitleWithUnderline title="Privacy Policy" />
         <div className="my-4">
