@@ -1,3 +1,5 @@
+import "../../../styles/customized-dracula-prism.css";
+
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import markdownToHtml from "@/lib/markdownToHtml";
 import MDFormatter from "@/app/_components/blog/MDFormatter";

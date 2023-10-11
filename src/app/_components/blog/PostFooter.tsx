@@ -24,7 +24,6 @@ type Props = {
 
 const PostFooter = ({ title }: Props) => {
   const path = usePathname();
-  console.log(path);
   const currentURL = (process.env.NEXT_PUBLIC_BASE_URL as string) + path;
   const iconSize = 32;
 
