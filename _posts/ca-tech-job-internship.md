@@ -1,6 +1,6 @@
 ---
 title: "CyberAgentの 就業型インターン Tech JOB に参加してきた"
-date: "2023/10/4"
+date: "2023/10/04"
 tags: [Internship]
 ---
 
