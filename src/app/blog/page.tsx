@@ -1,8 +1,13 @@
 import PostsFeed from "@/app/_components/home/PostsFeed";
 import { getAllPosts } from "@/lib/blog";
 import { FieldContents } from "@/@types/types";
-import PageHead from "@/app/_components/layout/PageHead";
 import PostLink from "../_components/blog/PostLink";
+import { Metadata } from "next";
+import { createMetaTitle } from "@/lib/meta";
+
+export const metadata: Metadata = {
+  title: createMetaTitle("Blog"),
+};
 
 const fetchPostsData = async () => {
   const fields: FieldContents[] = ["title", "date", "slug", "tags"];
@@ -15,7 +20,6 @@ const BlogPage = async () => {
 
   return (
     <>
-      <PageHead title="Blog" />
       <PostsFeed>
         <>{posts?.map((post) => <PostLink key={post.title} post={post} />)}</>
       </PostsFeed>

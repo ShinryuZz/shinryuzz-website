@@ -1,11 +1,14 @@
-import React from "react";
 import Wip from "@/app/_components/layout/Wip";
-import PageHead from "../_components/layout/PageHead";
+import { Metadata } from "next";
+import { createMetaTitle } from "@/lib/meta";
+
+export const metadata: Metadata = {
+  title: createMetaTitle("Photos"),
+};
 
 const PhotosPage = () => {
   return (
     <>
-      <PageHead title="Photos" />
       <Wip />
     </>
   );

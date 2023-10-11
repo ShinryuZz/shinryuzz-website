@@ -1,14 +1,10 @@
 import "../styles/globals.css";
-import Head from "next/head";
 import type { Metadata } from "next";
-import { WEBSITE_NAME } from "@/const/constants";
 import { MainContainer } from "./_components/layout/Container/MainContainer";
-import GoogleAnalytics from "./_components/GAnalytics";
-import Meta from "./_components/layout/Meta";
+import GoogleAnalytics from "./_components/analytics/GAnalytics";
+import { metaData } from "@/const/meta-data";
 
-export const metadata: Metadata = {
-  title: WEBSITE_NAME,
-};
+export const metadata: Metadata = metaData;
 
 export default function RootLayout({
   children,
@@ -18,11 +14,9 @@ export default function RootLayout({
   return (
     // TODO: dark モードを app router でも 切り替えれるようにする
     <html lang="en" className="dark">
-      <Head>
-        <title>{WEBSITE_NAME}</title>
-        <Meta />
+      <head>
         <GoogleAnalytics />
-      </Head>
+      </head>
       <body>
         <MainContainer>{children}</MainContainer>
       </body>

@@ -14,6 +14,7 @@ const PersonalIcon = ({ isShadow = true, size = 240 }: Props) => {
           ? "hover:scale-105 duration-150 hover:shadow-lg hover:shadow-red"
           : ""
       } `}
+      priority
       src="/kangaroo-space.png"
       alt="shinryuzz-icon"
       width={size}

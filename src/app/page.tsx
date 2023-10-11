@@ -1,6 +1,5 @@
 import TopContent from "./_components/home/TopContent";
 import PostsFeed from "./_components/home/PostsFeed";
-import PageHead from "./_components/layout/PageHead";
 import PostLink from "./_components/blog/PostLink";
 import { getAllPosts } from "@/lib/blog";
 import { FieldContents } from "@/@types/types";
@@ -16,7 +15,6 @@ const IndexPage = async () => {
 
   return (
     <>
-      <PageHead title="Home" />
       <div className="w-full flex flex-col justify-start items-center gap-12 md:gap-16">
         <TopContent />
         <PostsFeed>
