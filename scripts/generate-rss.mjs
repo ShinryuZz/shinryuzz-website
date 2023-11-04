@@ -4,16 +4,16 @@ import { globby } from "globby";
 import fs from "fs";
 import matter from "gray-matter";
 
-const BLOG_TITLE = "shinryuzz's blog";
-const BLOG_URL = "https://shinryuzz.com";
+const WEBSITE_TITLE = "shinryuzz's website";
+const WEBSITE_URL = "https://shinryuzz.com";
 
 async function generate() {
   const allBlogs = await globby(["_posts/*.md"]);
 
   const feed = new RSS({
-    title: BLOG_TITLE,
-    site_url: BLOG_URL,
-    feed_url: `${BLOG_URL}/feed.xml`,
+    title: WEBSITE_TITLE,
+    site_url: WEBSITE_URL,
+    feed_url: `${WEBSITE_URL}/feed.xml`,
   });
 
   allBlogs.map((post) => {
@@ -22,7 +22,7 @@ async function generate() {
     const slug = post.replace("_posts", "/posts").replace(".md", "");
     feed.item({
       title: data.title,
-      url: `${BLOG_URL}${slug}`,
+      url: `${WEBSITE_URL}${slug}`,
       date: data.date,
       description: data.excerpt,
     });
