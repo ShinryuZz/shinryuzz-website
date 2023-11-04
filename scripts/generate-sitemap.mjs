@@ -2,7 +2,7 @@ import { writeFileSync } from "fs";
 import { globby } from "globby";
 import prettier from "prettier";
 
-const BLOG_URL = "https://shinryuzz.com";
+const WEBSITE_URL = "https://shinryuzz.com";
 const LANG = "ja";
 
 async function generate() {
@@ -42,7 +42,7 @@ async function generate() {
 
             return `
               <url>
-                  <loc>${`${BLOG_URL}${route}`}</loc>
+                  <loc>${`${WEBSITE_URL}${route}`}</loc>
                   <lastmod>${lastModifiedDate}</lastmod>
                   <changefreq>monthly</changefreq>
                   <priority>${route === "" ? "1.0" : "0.8"}</priority>
@@ -62,7 +62,7 @@ async function generate() {
   writeFileSync("public/sitemap.xml", (await formatted).toString());
 
   const robotsTxt = `User-agent: * 
-Sitemap: ${BLOG_URL}/sitemap.xml`;
+Sitemap: ${WEBSITE_URL}/sitemap.xml`;
   writeFileSync("public/robots.txt", robotsTxt);
 }
 
