@@ -12,7 +12,7 @@ const TagsListWithSharp = ({ tags }: Props) => {
         <Link
           href={`/tags/${tag}`}
           key={tag}
-          className="text-pink-400 hover:opacity-70 hover:underline mr-3"
+          className="text-secondary hover:opacity-70 hover:underline mr-3"
         >
           {`#${tag}`}
         </Link>

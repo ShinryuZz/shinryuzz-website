@@ -10,7 +10,7 @@ const LinkWithUnderline = ({ href, text }: Props) => {
   return (
     <Link
       href={href}
-      className="text-cyan-800  border-b border-cyan-800 pb-1 hover:opacity-70"
+      className="text-primary border-b border-primary pb-1 hover:opacity-70"
     >
       {text} &gt;
     </Link>

@@ -15,7 +15,7 @@ const PostLink = ({ post }: PostProps) => {
       </Link>
       <div className="flex justify-between flex-wrap">
         <TagsListWithSharp tags={post.tags} />
-        <span className=" text-cyan-800">{post.date}</span>
+        <span className="text-primary">{post.date}</span>
       </div>
     </div>
   );

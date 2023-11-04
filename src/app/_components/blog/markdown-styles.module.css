@@ -3,7 +3,7 @@
 }
 
 .markdown a {
-  @apply text-cyan-800 hover:opacity-70;
+  @apply text-primary hover:opacity-70;
 }
 
 .markdown code,
