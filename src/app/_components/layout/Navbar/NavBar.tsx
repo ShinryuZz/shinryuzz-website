@@ -9,7 +9,6 @@ import { usePathname } from "next/navigation";
 
 const NavigationBar = () => {
   const pathname = usePathname();
-  console.log(pathname);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleMenuToggle = () => setIsOpen(!isOpen);
   const handleMenuClose = () => setIsOpen(false);
