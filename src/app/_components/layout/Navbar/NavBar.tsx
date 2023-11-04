@@ -5,8 +5,11 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { WEBSITE_NAME } from "@/const/constants";
+import { usePathname } from "next/navigation";
 
 const NavigationBar = () => {
+  const pathname = usePathname();
+  console.log(pathname);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleMenuToggle = () => setIsOpen(!isOpen);
   const handleMenuClose = () => setIsOpen(false);
@@ -42,7 +45,9 @@ const NavigationBar = () => {
                 key={path}
                 href="/"
                 onClick={handleMenuClose}
-                className={`hover:text-cyan-800 hover:border-b border-cyan-800`}
+                className={`hover:text-cyan-800 hover:border-b border-cyan-800 ${
+                  pathname == "/" && "text-cyan-800 border-cyan-800"
+                }`}
               >
                 Home
               </Link>
@@ -51,7 +56,9 @@ const NavigationBar = () => {
                 key={path}
                 href={`/${path}`}
                 onClick={handleMenuClose}
-                className={`hover:text-cyan-800 hover:border-b border-cyan-800`}
+                className={`hover:text-cyan-800 hover:border-b border-cyan-800 ${
+                  pathname == `/${path}` && "text-cyan-800 border-cyan-800"
+                }`}
               >
                 {capitalize(path)}
               </Link>
