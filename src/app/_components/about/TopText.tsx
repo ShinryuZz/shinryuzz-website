@@ -11,7 +11,7 @@ const TopText = () => {
         <a
           href={personalTwitter}
           target="_blank"
-          className="text-cyan-800 hover:opacity-70"
+          className="text-primary hover:opacity-70"
         >
           {TWITTER_ID}
         </a>

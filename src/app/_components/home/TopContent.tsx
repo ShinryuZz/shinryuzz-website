@@ -15,7 +15,7 @@ export const TopContent = () => {
             <a
               href={personalTwitter}
               target="_blank"
-              className="hover:opacity-70 text-cyan-800"
+              className="hover:opacity-70 text-primary"
             >
               {TWITTER_ID}
             </a>

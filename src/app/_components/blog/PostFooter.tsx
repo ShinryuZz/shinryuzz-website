@@ -52,7 +52,7 @@ const PostFooter = ({ title }: Props) => {
             <a
               href={personalTwitter}
               target="_blank"
-              className="text-cyan-800 hover:opacity-70"
+              className="text-primary hover:opacity-70"
             >
               {TWITTER_ID}
             </a>
@@ -61,7 +61,7 @@ const PostFooter = ({ title }: Props) => {
           <p>
             大学院生。webフロントエンドエンジニア（を名乗れるようになりたい）。
           </p>
-          <Link href="/about" className="text-cyan-800 hover:opacity-70">
+          <Link href="/about" className="text-primary hover:opacity-70">
             more about me
           </Link>
         </div>

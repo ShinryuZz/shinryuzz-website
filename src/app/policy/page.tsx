@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
             <a
               href="https://policies.google.com/technologies/partner-sites?hl=ja"
               target="_blank"
-              className="text-cyan-800"
+              className="text-primary"
             >
               こちら
             </a>{" "}

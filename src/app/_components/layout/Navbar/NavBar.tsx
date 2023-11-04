@@ -23,7 +23,7 @@ const NavigationBar = () => {
   return (
     <header className="p-6 z-10">
       <nav className="w-full flex sm:justify-around justify-between items-center">
-        <Link href="/" className="hover:text-cyan-800 flex items-center gap-3">
+        <Link href="/" className="hover:text-primary flex items-center gap-3">
           <h1 className="text-xl">{WEBSITE_NAME}</h1>
         </Link>
 
@@ -45,8 +45,8 @@ const NavigationBar = () => {
                 key={path}
                 href="/"
                 onClick={handleMenuClose}
-                className={`hover:text-cyan-800 hover:border-b border-cyan-800 ${
-                  pathname == "/" && "text-cyan-800 border-cyan-800"
+                className={`hover:text-primary hover:border-b border-primary ${
+                  pathname == "/" && "text-primary border-primary"
                 }`}
               >
                 Home
@@ -56,8 +56,8 @@ const NavigationBar = () => {
                 key={path}
                 href={`/${path}`}
                 onClick={handleMenuClose}
-                className={`hover:text-cyan-800 hover:border-b border-cyan-800 ${
-                  pathname == `/${path}` && "text-cyan-800 border-cyan-800"
+                className={`hover:text-primary hover:border-b border-primary ${
+                  pathname == `/${path}` && "text-primary border-primary"
                 }`}
               >
                 {capitalize(path)}

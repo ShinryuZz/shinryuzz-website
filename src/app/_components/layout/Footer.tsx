@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full p-5 flex flex-col justify-center items-center gap-2 text-sm">
-      <Link href="/policy" className="hover:text-cyan-800 ">
+      <Link href="/policy" className="hover:text-primary ">
         Privacy Policy
       </Link>
       <div className="flex gap-3 ">
