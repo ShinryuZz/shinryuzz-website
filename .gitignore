@@ -42,3 +42,6 @@ public/robots.txt
 public/feed.xml
 
 src/stories/assets/
+
+# nodenv
+.node-version

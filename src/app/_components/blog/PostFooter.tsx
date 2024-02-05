@@ -59,7 +59,7 @@ const PostFooter = ({ title }: Props) => {
             )
           </p>
           <p>
-            大学院生。webフロントエンドエンジニア（を名乗れるようになりたい）。
+            一般大学院生。ソフトウェアエンジニア（を名乗れるようになりたい）。
           </p>
           <Link href="/about" className="text-primary hover:opacity-70">
             more about me
