@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { getAllTags, getPostsByTag } from "../../../lib/blog";
 import TitleWithUnderline from "../../_components/atoms/TitleWithUnderline";
 import PostLink from "../../_components/blog/PostLink";

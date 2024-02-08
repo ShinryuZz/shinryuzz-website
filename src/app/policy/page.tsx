@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import TitleWithUnderline from "../_components/atoms/TitleWithUnderline";
 import { createMetaTitle } from "@/lib/meta";
 

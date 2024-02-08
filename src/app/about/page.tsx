@@ -3,7 +3,7 @@ import Bio from "../_components/about/Bio";
 import Education from "../_components/about/Education";
 import TopText from "../_components/about/TopText";
 import Others from "../_components/about/Others";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { createMetaTitle } from "@/lib/meta";
 
 export const metadata: Metadata = {
