@@ -1,5 +1,5 @@
 ---
-title: "25卒ソフトウェアエンジニア志望学生、インターン選考を振り返る"
+title: "25卒サマーインターン選考振り返り"
 date: "2023/08/30"
 tags: [Career, Jobhunt, Internship]
 ---
