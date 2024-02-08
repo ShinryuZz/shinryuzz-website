@@ -2,7 +2,7 @@ import PostsFeed from "@/app/_components/home/PostsFeed";
 import { getAllPosts } from "@/lib/blog";
 import { FieldContents } from "@/@types/types";
 import PostLink from "../_components/blog/PostLink";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { createMetaTitle } from "@/lib/meta";
 
 export const metadata: Metadata = {

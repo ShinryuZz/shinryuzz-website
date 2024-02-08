@@ -43,6 +43,6 @@ export const metaData: Metadata = {
       },
     ],
   },
-  themeColor: "#ffffff",
-  // manifest: `${WEBSITE_URL}/site.manifest`,
+  // themeColor: "#fd55b6",
+  manifest: `${WEBSITE_URL}/site.webmanifest`,
 };

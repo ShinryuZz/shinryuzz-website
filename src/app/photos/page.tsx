@@ -1,5 +1,5 @@
 import Wip from "@/app/_components/layout/Wip";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { createMetaTitle } from "@/lib/meta";
 
 export const metadata: Metadata = {

@@ -4,7 +4,7 @@ import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import markdownToHtml from "@/lib/markdownToHtml";
 import MDFormatter from "@/app/_components/blog/MDFormatter";
 import { FieldContents } from "@/@types/types";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { WEBSITE_NAME, WEBSITE_URL } from "@/const/constants";
 
 type Props = {
