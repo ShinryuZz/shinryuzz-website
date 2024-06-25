@@ -7,7 +7,7 @@ const TopText = () => {
     <p className="text-2xl md:text-3xl text-center">
       こんにちは、
       <span>
-        松岡 伸龍 (
+        しんりう (
         <a
           href={personalTwitter}
           target="_blank"
