@@ -1,11 +1,12 @@
 import "../../../styles/customized-dracula-prism.css";
 
+import type { Metadata } from "next";
+
+import type { FieldContents } from "@/@types/types";
+import MDFormatter from "@/app/_components/blog/MDFormatter";
+import { WEBSITE_NAME, WEBSITE_URL } from "@/const/general";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import markdownToHtml from "@/lib/markdownToHtml";
-import MDFormatter from "@/app/_components/blog/MDFormatter";
-import { FieldContents } from "@/@types/types";
-import type { Metadata } from "next";
-import { WEBSITE_NAME, WEBSITE_URL } from "@/const/constants";
 
 type Props = {
   params: { slug: string };

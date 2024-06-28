@@ -1,7 +1,8 @@
-import { PostProps } from "@/@types/types";
-import PostHeader from "./PostHeader";
-import PostFooter from "./PostFooter";
+import type { PostProps } from "@/@types/types";
+
 import PostBody from "./PostBody";
+import PostFooter from "./PostFooter";
+import PostHeader from "./PostHeader";
 
 export default function MDFormatter({ post }: PostProps) {
   return (

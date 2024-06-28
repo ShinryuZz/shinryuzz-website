@@ -1,5 +1,7 @@
 import React from "react";
+
 import TitleWithUnderline from "@/app/_components/atoms/TitleWithUnderline";
+
 import { List, ListItem } from "../atoms/SimpleList";
 
 const TechStack = () => {

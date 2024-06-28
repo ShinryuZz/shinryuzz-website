@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+
 import {
   AUTHOR,
   WEBSITE_DESCRIPTION,
   WEBSITE_KEYWORDS,
   WEBSITE_NAME,
   WEBSITE_URL,
-} from "./constants";
+} from "./general";
 
 export const metaData: Metadata = {
   title: WEBSITE_NAME,

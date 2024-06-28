@@ -1,6 +1,8 @@
-import { PostProps } from "@/@types/types";
 import Link from "next/link";
 import React from "react";
+
+import type { PostProps } from "@/@types/types";
+
 import TagsListWithSharp from "../atoms/TagsListWithSharp";
 
 const PostLink = ({ post }: PostProps) => {

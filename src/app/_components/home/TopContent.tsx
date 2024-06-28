@@ -1,8 +1,10 @@
 import React from "react";
+
+import { TWITTER_ID } from "@/const/general";
 import { personalTwitter } from "@/const/social-links";
+
 import LinkWithUnderline from "../atoms/LinkWithUnderline";
 import PersonalIcon from "../atoms/PersonalIcon";
-import { TWITTER_ID } from "@/const/constants";
 
 export const TopContent = () => {
   return (

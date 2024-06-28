@@ -1,6 +1,7 @@
-import { useDarkClass } from "./useDarkClass";
 import { useEffect } from "react";
 import { useLocalStorage } from "react-use";
+
+import { useDarkClass } from "./useDarkClass";
 
 const Theme = {
   Dark: "dark",
@@ -16,7 +17,7 @@ export const useDarkMode: UseDarkMode = () => {
   const [themeValue, setThemeValue] =
     useLocalStorage<(typeof Theme)["Dark" | "Light"]>("theme");
   const { isDarkMode, toggle } = useDarkClass();
-  const keeepToggle = (isDark: boolean) => {
+  const keepToggle = (isDark: boolean) => {
     toggle(isDark);
     setThemeValue(isDark ? Theme.Dark : Theme.Light);
   };
@@ -33,7 +34,7 @@ export const useDarkMode: UseDarkMode = () => {
       toggle(false);
       setThemeValue(Theme.Light);
     }
-  }, [themeValue]);
+  }, [themeValue, setThemeValue, toggle]);
 
-  return { isDarkMode, toggle: keeepToggle };
+  return { isDarkMode, toggle: keepToggle };
 };

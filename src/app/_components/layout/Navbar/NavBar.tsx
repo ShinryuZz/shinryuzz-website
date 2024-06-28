@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { WEBSITE_NAME } from "@/const/constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React, { useState } from "react";
+
+import { WEBSITE_NAME } from "@/const/general";
 
 const NavigationBar = () => {
   const pathname = usePathname();
@@ -61,7 +62,7 @@ const NavigationBar = () => {
               >
                 {capitalize(path)}
               </Link>
-            )
+            ),
           )}
           {/* <FontAwesomeIcon
             icon={faCircleHalfStroke}

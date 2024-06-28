@@ -1,5 +1,6 @@
-import { PostProps } from "@/@types/types";
 import React from "react";
+
+import type { PostProps } from "@/@types/types";
 import TagsListWithSharp from "@/app/_components/atoms/TagsListWithSharp";
 
 const PostHeader = ({ post }: PostProps) => {
