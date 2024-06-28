@@ -34,7 +34,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# markdown draft 
+# markdown draft
 _draft/
 
 public/sitemap.xml
@@ -45,3 +45,6 @@ src/stories/assets/
 
 # nodenv
 .node-version
+
+# eslint
+.eslintcache

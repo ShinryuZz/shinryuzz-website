@@ -8,7 +8,12 @@
     "build": "next build",
     "postbuild": "node ./scripts/generate-sitemap.mjs && node ./scripts/generate-rss.mjs",
     "start": "next start",
-    "lint": "next lint",
+    "format": "run-s prettier lint",
+    "lint": "run-s lint-*",
+    "lint-check": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prettier": "run-s prettier-*",
+    "prettier-check": "prettier --check \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,scss}\"",
+    "prettier-fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,scss}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -23,11 +28,15 @@
     "@types/node": "20.4.10",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.47.0",
     "eslint-config-next": "14.1.0",
+    "eslint-config-prettier": "^9.1.0",
     "gray-matter": "^4.0.3",
     "next": "^14.1.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "8.4.27",
     "prism-themes": "^1.9.0",
     "react": "18.2.0",
@@ -60,5 +69,6 @@
     "rss": "^1.2.2",
     "storybook": "^7.4.0",
     "tailwind-dracula": "^1.1.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.2"
 }
