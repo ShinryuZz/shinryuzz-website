@@ -7,8 +7,8 @@ import {
   personalFacebook,
   personalInstagram,
   personalBooklog,
-} from "@/const/links";
-import { List, ListItemLink } from "../atoms/List";
+} from "@/const/social-links";
+import { List, ListItemLink } from "../atoms/SimpleList";
 
 const SocialLinks = () => {
   return (

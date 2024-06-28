@@ -1,6 +1,6 @@
 import React from "react";
 import TitleWithUnderline from "@/app/_components/atoms/TitleWithUnderline";
-import { List, ListItem } from "../atoms/List";
+import { List, ListItem } from "../atoms/SimpleList";
 
 const TechStack = () => {
   return (
@@ -8,14 +8,16 @@ const TechStack = () => {
       <TitleWithUnderline title="Skills 🕹️" />
       <div className="text-justify">
         Webフロントエンドを中心に、バックエンド,
-        インフラまで一貫して設計・開発・運用経験あり。 趣味や研究などで IoT,
-        機械学習周りも少しわかる。
+        インフラまで一貫して設計・開発・運用経験があります。
       </div>
 
       <List>
-        <ListItem>Javascript/Typescript/Next.js/React.js</ListItem>
+        <ListItem>
+          Javascript/Typescript/Next.js/React.js/Vue.js/D3.js/Deck.gl
+        </ListItem>
         <ListItem>Python/Django/FastAPI</ListItem>
         <ListItem>Go/Gin</ListItem>
+        <ListItem>PHP/Laravel</ListItem>
         <ListItem>AWS/Google Cloud</ListItem>
         <ListItem>Docker/MySQL/Linux/Raspberry Pi</ListItem>
       </List>
