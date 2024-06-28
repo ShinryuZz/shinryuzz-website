@@ -2,7 +2,7 @@
 
 import React from "react";
 import { TWITTER_ID } from "@/const/constants";
-import { personalTwitter } from "@/const/links";
+import { personalTwitter } from "@/const/social-links";
 
 import {
   TwitterIcon,

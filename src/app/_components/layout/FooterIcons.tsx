@@ -12,7 +12,7 @@ import {
   personalTwitter,
   personalFacebook,
   personalInstagram,
-} from "@/const/links";
+} from "@/const/social-links";
 
 const FooterIcons = () => {
   return (

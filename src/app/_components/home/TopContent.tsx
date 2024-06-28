@@ -1,5 +1,5 @@
 import React from "react";
-import { personalTwitter } from "@/const/links";
+import { personalTwitter } from "@/const/social-links";
 import LinkWithUnderline from "../atoms/LinkWithUnderline";
 import PersonalIcon from "../atoms/PersonalIcon";
 import { TWITTER_ID } from "@/const/constants";
