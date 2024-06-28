@@ -1,9 +1,12 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { MainContainer } from "./_components/layout/Container/MainContainer";
-import GoogleAnalytics from "./_components/analytics/GAnalytics";
-import { metaData } from "@/const/meta-data";
 import { Suspense } from "react";
+
+import { metaData } from "@/const/meta-data";
+
+import GoogleAnalytics from "./_components/analytics/GAnalytics";
+import { MainContainer } from "./_components/layout/Container/MainContainer";
+
 
 export const metadata: Metadata = metaData;
 

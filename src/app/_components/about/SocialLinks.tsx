@@ -1,8 +1,10 @@
 import React from "react";
-import TitleWithUnderline from "../atoms/TitleWithUnderline";
+
+import { type SocialLink, socialLinks } from "@/const/social-links";
 
 import { List, ListItemLink } from "../atoms/SimpleList";
-import { SocialLink, socialLinks } from "@/const/social-links";
+import TitleWithUnderline from "../atoms/TitleWithUnderline";
+
 
 const SocialLinks = () => {
   return (

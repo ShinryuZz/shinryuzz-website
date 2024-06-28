@@ -1,6 +1,7 @@
-import { useDarkClass } from "./useDarkClass";
 import { useEffect } from "react";
 import { useLocalStorage } from "react-use";
+
+import { useDarkClass } from "./useDarkClass";
 
 const Theme = {
   Dark: "dark",

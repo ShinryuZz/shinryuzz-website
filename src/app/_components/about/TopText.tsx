@@ -1,6 +1,7 @@
 import React from "react";
-import { personalTwitter } from "@/const/social-links";
+
 import { TWITTER_ID } from "@/const/constants";
+import { personalTwitter } from "@/const/social-links";
 
 const TopText = () => {
   return (

@@ -1,9 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { ReactNode } from "react";
-import TitleWithUnderline from "../atoms/TitleWithUnderline";
+import type { ReactNode } from "react";
+
 import LinkWithUnderline from "../atoms/LinkWithUnderline";
+import TitleWithUnderline from "../atoms/TitleWithUnderline";
 
 type PostsProps = {
   children: ReactNode;

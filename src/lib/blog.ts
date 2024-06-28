@@ -1,7 +1,9 @@
 import fs from "fs";
 import { join } from "path";
+
 import matter from "gray-matter";
-import { Post, PostFields, Tag } from "@/@types/types";
+
+import type { Post, PostFields, Tag } from "@/@types/types";
 
 const postDir = join(process.cwd(), "_posts");
 
@@ -17,6 +19,7 @@ export const getPostBySlug = (
   const fullPath = join(postDir, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const items: any = {};
 
   // Ensure only the minimal needed data is exposed

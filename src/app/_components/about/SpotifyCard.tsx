@@ -1,7 +1,8 @@
 import React from "react";
 
-import TitleWithUnderline from "../atoms/TitleWithUnderline";
 import { SPOTIFY_EMBED_ID } from "@/const/constants";
+
+import TitleWithUnderline from "../atoms/TitleWithUnderline";
 
 const SpotifyFrame = () => {
   return (

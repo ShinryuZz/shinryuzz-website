@@ -1,4 +1,5 @@
 import React from "react";
+
 import TitleWithUnderline from "@/app/_components/atoms/TitleWithUnderline";
 
 const Education = () => {

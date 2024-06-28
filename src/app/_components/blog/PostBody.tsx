@@ -1,6 +1,8 @@
 import React from "react";
+
+import type { PostProps } from "@/@types/types";
+
 import markdownStyles from "./markdown-styles.module.css";
-import { PostProps } from "@/@types/types";
 
 const PostBody = ({ post }: PostProps) => {
   return (

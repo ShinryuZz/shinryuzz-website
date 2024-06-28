@@ -1,9 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
-import { TWITTER_ID } from "@/const/general";
-import { personalTwitter } from "@/const/social-links";
-
 import {
   TwitterIcon,
   TwitterShareButton,
@@ -14,9 +13,12 @@ import {
   FacebookIcon,
   FacebookShareButton,
 } from "react-share";
-import { usePathname } from "next/navigation";
+
 import PersonalIcon from "@/app/_components/atoms/PersonalIcon";
-import Link from "next/link";
+import { TWITTER_ID } from "@/const/general";
+import { personalTwitter } from "@/const/social-links";
+
+
 
 type Props = {
   title: string;

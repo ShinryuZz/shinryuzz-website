@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
+
+import type { FieldContents } from "@/@types/types";
 import PostsFeed from "@/app/_components/home/PostsFeed";
 import { getAllPosts } from "@/lib/blog";
-import { FieldContents } from "@/@types/types";
-import PostLink from "../_components/blog/PostLink";
-import type { Metadata } from "next";
 import { createMetaTitle } from "@/lib/meta";
+
+import PostLink from "../_components/blog/PostLink";
+
+
 
 export const metadata: Metadata = {
   title: createMetaTitle("Blog"),

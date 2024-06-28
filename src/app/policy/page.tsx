@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import TitleWithUnderline from "../_components/atoms/TitleWithUnderline";
+
 import { createMetaTitle } from "@/lib/meta";
+
+import TitleWithUnderline from "../_components/atoms/TitleWithUnderline";
 
 export const metadata: Metadata = {
   title: createMetaTitle("About"),

@@ -1,8 +1,9 @@
-import TopContent from "./_components/home/TopContent";
-import PostsFeed from "./_components/home/PostsFeed";
-import PostLink from "./_components/blog/PostLink";
+import type { FieldContents } from "@/@types/types";
 import { getAllPosts } from "@/lib/blog";
-import { FieldContents } from "@/@types/types";
+
+import PostLink from "./_components/blog/PostLink";
+import PostsFeed from "./_components/home/PostsFeed";
+import { TopContent } from "./_components/home/TopContent";
 
 const fetchPostsData = async () => {
   const fields: FieldContents[] = ["title", "date", "slug", "tags"];

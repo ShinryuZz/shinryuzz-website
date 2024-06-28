@@ -1,9 +1,9 @@
-import { unified } from "unified";
+import rehypeCodeTitles from "rehype-code-titles";
+import rehypePrism from "rehype-prism-plus";
+import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
-import rehypePrism from "rehype-prism-plus";
-import rehypeCodeTitles from "rehype-code-titles";
+import { unified } from "unified";
 
 export default async function markdownToHtml(markdown) {
   const result = await unified()

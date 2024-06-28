@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+
 import { createMetaTitle } from "@/lib/meta";
 
-import TopText from "../_components/about/TopText";
 import Bio from "../_components/about/Bio";
 import SocialLinks from "../_components/about/SocialLinks";
-import TechStack from "../_components/about/TechStack";
 import SpotifyCard from "../_components/about/SpotifyCard";
+import TechStack from "../_components/about/TechStack";
+import TopText from "../_components/about/TopText";
 
 export const metadata: Metadata = {
   title: createMetaTitle("About"),
