@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { TWITTER_ID } from "@/const/constants";
+import { TWITTER_ID } from "@/const/general";
 import { personalTwitter } from "@/const/social-links";
 
 import {

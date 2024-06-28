@@ -5,7 +5,7 @@ import {
   WEBSITE_KEYWORDS,
   WEBSITE_NAME,
   WEBSITE_URL,
-} from "./constants";
+} from "./general";
 
 export const metaData: Metadata = {
   title: WEBSITE_NAME,
