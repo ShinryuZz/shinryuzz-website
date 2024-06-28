@@ -7,8 +7,6 @@ import { createMetaTitle } from "@/lib/meta";
 
 import PostLink from "../_components/blog/PostLink";
 
-
-
 export const metadata: Metadata = {
   title: createMetaTitle("Blog"),
 };

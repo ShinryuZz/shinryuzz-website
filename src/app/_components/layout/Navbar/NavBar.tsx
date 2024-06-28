@@ -6,8 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
-import { WEBSITE_NAME } from "@/const/constants";
-
+import { WEBSITE_NAME } from "@/const/general";
 
 const NavigationBar = () => {
   const pathname = usePathname();

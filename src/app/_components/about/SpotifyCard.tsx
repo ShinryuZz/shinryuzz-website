@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SPOTIFY_EMBED_ID } from "@/const/constants";
+import { SPOTIFY_EMBED_ID } from "@/const/general";
 
 import TitleWithUnderline from "../atoms/TitleWithUnderline";
 
