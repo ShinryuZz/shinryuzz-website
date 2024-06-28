@@ -5,7 +5,6 @@ import { type SocialLink, socialLinks } from "@/const/social-links";
 import { List, ListItemLink } from "../atoms/SimpleList";
 import TitleWithUnderline from "../atoms/TitleWithUnderline";
 
-
 const SocialLinks = () => {
   return (
     <div className="w-full flex flex-col items-start gap-4">

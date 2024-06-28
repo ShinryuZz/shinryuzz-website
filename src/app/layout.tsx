@@ -7,7 +7,6 @@ import { metaData } from "@/const/meta-data";
 import GoogleAnalytics from "./_components/analytics/GAnalytics";
 import { MainContainer } from "./_components/layout/Container/MainContainer";
 
-
 export const metadata: Metadata = metaData;
 
 export default function RootLayout({

@@ -13,7 +13,7 @@ export const getPostSlugs = (): string[] => {
 
 export const getPostBySlug = (
   fliename: string,
-  fields: PostFields = []
+  fields: PostFields = [],
 ): Post => {
   const slug = fliename.replace(/\.md$/, "");
   const fullPath = join(postDir, `${slug}.md`);
@@ -51,7 +51,7 @@ export const getAllPosts = async (fields: PostFields = []): Promise<Post[]> => {
     slugs
       .map((slug) => getPostBySlug(slug, fields))
       // sort posts by date in descending order
-      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1)),
   );
   return posts;
 };

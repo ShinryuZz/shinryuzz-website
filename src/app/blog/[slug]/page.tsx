@@ -4,11 +4,9 @@ import type { Metadata } from "next";
 
 import type { FieldContents } from "@/@types/types";
 import MDFormatter from "@/app/_components/blog/MDFormatter";
-import { WEBSITE_NAME, WEBSITE_URL } from "@/const/constants";
+import { WEBSITE_NAME, WEBSITE_URL } from "@/const/general";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import markdownToHtml from "@/lib/markdownToHtml";
-
-
 
 type Props = {
   params: { slug: string };
