@@ -16,5 +16,5 @@ export const socialLinks: SocialLink[] = [
   { name: "Github", url: personalGithub },
   { name: "Facebook", url: personalFacebook },
   { name: "Instagram", url: personalInstagram },
-  { name: "Booklog", url: personalBooklog },
+  { name: "ブクログ", url: personalBooklog },
 ];
