@@ -13,13 +13,19 @@ const fetchPostsData = async () => {
 
 const IndexPage = async () => {
   const posts = await fetchPostsData();
+  const limit = 8;
+  const firstNPosts = posts.slice(0, limit);
 
   return (
     <>
       <div className="w-full flex flex-col justify-start items-center gap-12 md:gap-16">
         <TopContent />
         <PostsFeed>
-          <>{posts?.map((post) => <PostLink key={post.title} post={post} />)}</>
+          <>
+            {firstNPosts?.map((post) => (
+              <PostLink key={post.title} post={post} />
+            ))}
+          </>
         </PostsFeed>
       </div>
     </>
