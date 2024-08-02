@@ -16,7 +16,7 @@ import {
 
 import PersonalIcon from "@/app/_components/atoms/PersonalIcon";
 import { TWITTER_ID } from "@/const/general";
-import { personalTwitter } from "@/const/social-links";
+import { twitter } from "@/const/social-links";
 
 type Props = {
   title: string;
@@ -50,7 +50,7 @@ const PostFooter = ({ title }: Props) => {
           <p className="font-bold text-lg">
             しんりゅう &nbsp; (
             <a
-              href={personalTwitter}
+              href={twitter}
               target="_blank"
               className="text-primary hover:opacity-70"
             >

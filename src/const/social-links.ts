@@ -3,18 +3,17 @@ export type SocialLink = {
   url: string;
 };
 
-export const personalTwitter: string = "https://twitter.com/shinryuzz__";
-export const personalGithub: string = "https://github.com/shinryuzz";
-export const personalFacebook: string =
+export const twitter: string = "https://twitter.com/shinryuzz__";
+export const github: string = "https://github.com/shinryuzz";
+const facebook: string =
   "https://www.facebook.com/profile.php?id=100012067954842";
-export const personalInstagram: string =
-  "https://www.instagram.com/shinryuzz__/";
-export const personalBooklog: string = "https://booklog.jp/users/shinryuzz";
+const instagram: string = "https://www.instagram.com/shinryuzz__/";
+const booklog: string = "https://booklog.jp/users/shinryuzz";
 
 export const socialLinks: SocialLink[] = [
-  { name: "Twitter", url: personalTwitter },
-  { name: "Github", url: personalGithub },
-  { name: "Facebook", url: personalFacebook },
-  { name: "Instagram", url: personalInstagram },
-  { name: "ブクログ", url: personalBooklog },
+  { name: "Twitter", url: twitter },
+  { name: "Github", url: github },
+  { name: "Facebook", url: facebook },
+  { name: "Instagram", url: instagram },
+  { name: "ブクログ", url: booklog },
 ];

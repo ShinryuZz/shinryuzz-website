@@ -1,7 +1,7 @@
 import React from "react";
 
 import { TWITTER_ID } from "@/const/general";
-import { personalTwitter } from "@/const/social-links";
+import { twitter } from "@/const/social-links";
 
 import LinkWithUnderline from "../atoms/LinkWithUnderline";
 import PersonalIcon from "../atoms/PersonalIcon";
@@ -15,7 +15,7 @@ export const TopContent = () => {
           <div className="text-lg font-bold mb-1">
             しんりゅう (
             <a
-              href={personalTwitter}
+              href={twitter}
               target="_blank"
               className="hover:opacity-70 text-primary"
             >
