@@ -10,25 +10,11 @@ export const List = ({ children }: { children: React.ReactNode }) => {
 
 export const ListItem = ({ children }: { children: React.ReactNode }) => {
   return (
-    <li className="break-all ml-4 text-red">
+    <li className="break-all ml-5 text-red">
       <span className="text-darker dark:text-light">{children}</span>
     </li>
   );
 };
-
-// export const LinkItem = ({
-//   children,
-//   href,
-// }: {
-//   children: React.ReactNode;
-//   href: string;
-// }) => {
-//   return (
-//     <a href={href} className="text-darker dark:text-light hover:opacity-70">
-//       {children}
-//     </a>
-//   );
-// };
 
 export const ListItemLink = ({
   children,

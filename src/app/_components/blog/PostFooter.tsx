@@ -15,6 +15,7 @@ import {
 } from "react-share";
 
 import PersonalIcon from "@/app/_components/atoms/PersonalIcon";
+import { titles } from "@/const/bio";
 import { TWITTER_ID } from "@/const/general";
 import { twitter } from "@/const/social-links";
 
@@ -58,9 +59,7 @@ const PostFooter = ({ title }: Props) => {
             </a>
             )
           </p>
-          <p>
-            一般大学院生。ソフトウェアエンジニア（を名乗れるようになりたい）。
-          </p>
+          <p>{titles.join(" / ")}</p>
           <Link href="/about" className="text-primary hover:opacity-70">
             more about me
           </Link>

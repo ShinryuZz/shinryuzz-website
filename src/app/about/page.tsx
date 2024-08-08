@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-12">
+      <div className="flex flex-col justify-center items-center gap-10">
         <TopText />
         <Bio />
         <SocialLinks />

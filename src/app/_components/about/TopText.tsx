@@ -1,7 +1,7 @@
 import React from "react";
 
 import { TWITTER_ID } from "@/const/general";
-import { personalTwitter } from "@/const/social-links";
+import { twitter } from "@/const/social-links";
 
 const TopText = () => {
   return (
@@ -10,7 +10,7 @@ const TopText = () => {
       <span>
         しんりう (
         <a
-          href={personalTwitter}
+          href={twitter}
           target="_blank"
           className="text-primary hover:opacity-70"
         >

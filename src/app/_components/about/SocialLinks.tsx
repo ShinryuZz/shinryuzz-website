@@ -8,7 +8,7 @@ import TitleWithUnderline from "../atoms/TitleWithUnderline";
 const SocialLinks = () => {
   return (
     <div className="w-full flex flex-col items-start gap-4">
-      <TitleWithUnderline title="Social Links 🤙" />
+      <TitleWithUnderline title="Social Links 💫" />
       <List>
         {socialLinks.map((link: SocialLink) => {
           return (

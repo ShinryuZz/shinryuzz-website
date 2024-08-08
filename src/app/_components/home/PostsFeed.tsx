@@ -15,8 +15,8 @@ const PostsFeed = ({ children }: PostsProps) => {
 
   return (
     <div className="w-full flex flex-col items-start gap-4">
-      <TitleWithUnderline title="Blog 📋" />
-      <div className="w-full flex flex-col items-start gap-3">{children}</div>
+      <TitleWithUnderline title="Posts 📑" />
+      <div className="w-full flex flex-col items-start gap-6">{children}</div>
       {pathname !== "/blog" && (
         <LinkWithUnderline href="/blog" text="see all posts" />
       )}
