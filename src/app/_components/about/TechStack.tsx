@@ -8,7 +8,7 @@ import { List, ListItem } from "../atoms/SimpleList";
 const TechStack = () => {
   return (
     <div className="w-full flex flex-col items-start gap-4 my-8">
-      <TitleWithUnderline title="Teck Stack 🕹️" />
+      <TitleWithUnderline title="Tech Stack 🕹️" />
       <div className="text-justify">
         {skillDescription.split("\n").map((text, index) => (
           <div key={index}>{text}</div>
